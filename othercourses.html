@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Other Courses</title>
+
+    
+
+ <script type="text/javascript"></script>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width="device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="menustyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet'>
+  <style type="text/css">
+
+  #heading
+        {
+          width: 100%;
+          margin: auto;
+          color: white;
+          height: 200px;
+          /*background-image: linear-gradient(to right, #0086C6, #42C2FF) ;*/
+          background-color: black;
+          /*margin-left: 20px;*/
+          size: 30px;
+          font-size: 50px;
+          font-family: "Caudex";
+          text-align: left;
+          vertical-align: middle;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          /*border: 5px solid darkblue;*/
+        }
+    
+
+  body{
+      background-color: #DBD9DC ;
+    }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.otable table{
+  font-family: arial, sans-serif;
+  width: 100%;
+}
+.otable td{
+  border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px; 
+}
+.otable tr:nth-child(odd){
+  background-color: #dddddd;
+}
+.mytable th, td,tr {
+    text-align: center;  
+    }
+.mytable th {
+    background-color: darkblue;
+    color:cyan;
+}
+.mytable table,th,tr,td {
+    border: 1px solid black;
+    padding: 20px;
+    font-family: "Constantia";
+    font-size: 20px
+}
+
+#yo tr:hover {background-color: #ddd;}
+
+#yo tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+</style>
+</head>
+
+<div id="heading">
+    <img src="logo_white.png" width="200px" height="160px">
+    Course Database and Spines    
+</div>
+
+<br>
+<br>
+<div class="container">
+   <p align="center"> 
+  <button type="button"  class="button2" data-toggle="collapse" data-target="#demo"><span>Select a Branch </span></button>  
+    </p> 
+    <center>
+  <div id="demo" class="collapse">
+    
+    <br>
+
+<center><div class="csebox">
+      <button type="button" class="button1" onclick="window.open('realcse.html', '_self')">Computer Science & Engineering</button>
+    </div>
+  </center>
+    <br>
+    <center>
+    <div class="eebox">
+      <button type="button" class="button3" onclick="window.open('realee.html', '_self')">Electrical Engineering</button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="mechbox">
+      <button type="button" class="button4" onclick="window.open('realmec.html', '_self')">Mechanical Engineering </button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="othbox">
+      <button type="button" class="button5" onclick="window.open('othercourses.html', '_self')">Other Courses</button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="othbox">
+      <button type="button" class="button6" onclick="window.open('electives.html', '_self')">Electives</button>
+    </div>
+    </center>
+</div>
+</center>
+<br>
+<br>
+
+<body>
+    <center>
+    <table id="yo" class = "mytable" style="width:50%">
+        <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+        </tr>
+
+        <tr>
+            <td>----</td>
+            <td><a href="#" id="envi_study">Environmental Studies</a></td>
+        </tr>
+        
+        <tr>
+            <td><a id = "CH101" href="#">CH101</a></td>
+            <td>Chemistry for Engineers</td>
+        </tr>
+
+        <tr>
+            <td><a id = "CH111" href="#">CH111</a></td>
+            <td>Chemistry Lab</td>
+        </tr>
+
+        <tr>
+            <td><a id="PH101" href="#">PH101</a></td>
+            <td>Quantum Physics</td>
+        </tr>
+
+        <tr>
+            <td><a id="PH102" href="#">PH102</a></td>
+            <td>Electricity and Magnetism</td>
+        </tr>
+
+        <tr>
+            <td>---</td>
+            <td><a href="#" id="finearts">Fine Arts</a></td>
+        </tr>
+
+        <tr>
+            <td>----</td>
+            <td><a id="urban" href="#">Urban Dance in India</a></td>
+        </tr>
+
+        <tr>
+            <td><a id="HS201" href="#">HS201</a></td>
+            <td>Economics</td>
+        </tr>
+
+    </table>
+    </center>
+<br>
+<br>
+
+<div id="envistudym" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Environmental Studies</h2>
+    </div>
+    <div class="modal-body">
+      <table class="otable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-0-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core Course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>1st semester Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>
+          Module A: Natural Resources, Ecosystems,
+          Biodiversity and its conservation: Natural resources
+          and ecosystems, Forest, grassland, desert and aquatic
+          ecosystems, biodiversity at global, national and local
+          levels, conservation of biodiversity
+          Module B: Air Pollution
+          Introduction to understanding air quality
+          management, fundamental processes of meteorology,
+          Air Pollutants – Gaseous and particulate, Criteria for
+          pollutants, ambient and source standards, Aerosols:
+          Characterisation of aerosols, size distributions,
+          measurement methods; Transport behaviour:
+          diffusion, sedimentation, inertia; Visibility;
+          principles of particulate control systems.
+          Module C: Water Treatment
+          Discussion of water quality constituents and
+          introduction to the design and operation of water and
+          wastewater treatment processes.
+          Module D: Solid Waste Management and Climate
+          Change
+          Different aspects of solid and hazardous waste
+          management. Climate change and greenhouse gas
+          emissions, technologies would reduce the greenhouse
+          gas emissions. Climate change and its possible
+          causes.
+          Module E: Sociology/Environmentalism
+          Description: Environmentalism in sociological
+          tradition, Sustainability, North-South divide, Political
+          economy approaches in environmental studies,
+          Debates over environmental issues
+          Module F: Economics
+          Energy economics and financial markets, Market
+          dynamics, Energy derivatives, Energy Efficiency;
+          Sustainable Development: Concept, Measurement &
+          Strategies, Interaction between Economic
+          Development and the Environment
+          Module G: Philosophy
+          46
+          Environmental ethics, Deep ecology, Practical
+          ecology, Religion and attitude towards environmental
+          ethics, Ecofeminism and its evolution.
+          Module H: Field work and project: visit to a local area
+          to document environmental assets, case studies of a
+          simple ecosystem and group discussions on current
+          environmental issues.
+
+    </td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: CS301</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CH101m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CH101 Chemistry for Engineers: Fundamental concepts and Applications</h2>
+    </div>
+    <div class="modal-body">
+      <table class="otable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-1-0-8</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core Course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>
+          Organic and Inorganic
+          (Inorganic): a. Harness the power of periodic table 
+          Periodic properties: trends in size, electron affinity, ionization potential and electronegativity • Role of chemical elements in water contamination • Hardness of water • Desalination of brackish and sea water • Role of silicon in semiconducting applications • metal atom (Cu, Au, Pt, Pd etc.) based nanoparticles 
+          b. Coordination complexes
+          Transition metal chemistry: inorganic complexes, bonding theories, magnetism, bonding aspects and structural distortion
+          (Organic): a. M.O. theory and π-conjugated compounds
+          Molecular orbitals of common functional groups, Qualitative Huckel MOs of conjugated polyenes and benzene. Aromaticity. Configuration, molecular chirality and isomerism, Conformation of alkanes and cycloalkanes 
+          b. Polymers
+          Types and classification of polymers • polymerization techniques • Structure-property relationships of polymers • Conducting polymers
+          Physical Chemistry:
+          a. Quantum chemistry
+          Schrodinger equation, Origin of quantization, Born interpretation of wave function, Hydrogen atom: solution to -part, Atomic orbitals, many electron atoms and spin orbitals. Chemical bonding: MO theory: LCAO molecular orbitals, Structure, bonding and energy levels of diatomic molecules. Concept of sp, sp2 and sp3 hybridization; Bonding and shape of many atom molecules; Intermolecular Forces; Potential energy Surfaces-Rates of reactions; Steady state approximation and its applications; Concept of pre-equilibrium; Equilibrium and related thermodynamic quantities
+          b. Electrochemistry 
+          Electrochemical cells and Galvanic cells • EMF of a cell • Single electrode potential • Nernst equation • Electrochemical series • Types of electrodes • Reference electrodes • Batteries • Modern batteries • Fuel cells • corrosion 
+    </td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CH111m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CH111 Chemistry Lab</h2>
+    </div>
+    <div class="modal-body">
+      <table class="otable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>0-0-3-3</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core Course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>
+          Experiments illustrating the concepts of 1) Electrochemical Cell, (2) Chemical kinetics, (3) Estimation of Iron, (4) Oscillatory Chemical Reactions, (5a) Electrolytic Conductance   (5b)   Crystalline Solids (6) Colorimetric Analysis (7)  Complexometric Titration
+          (8) Thin Layer Chromatography
+    </td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="PH101m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>PH101 Quantum Physics and Applications</h2>
+    </div>
+    <div class="modal-body">
+      <table class="otable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core Course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>
+          • Quantum nature of light: Photoelectric Effect and Compton Effect. 
+          • Stability of atoms and Bohr`s rules. 
+          • Wave particle duality: De Broglie wavelength, Group and Phase velocity, Uncertainty Principle, Double Slit Experiment. 
+          • Schrödinger Equation. 
+          • Physical interpretation of Wave Function, Elementary Idea of Operators, Eigen-value Problem. 
+          • Solution of Schrödinger equation for simple boundary value problems. 
+          • Reflection and Transmission Coefficients. Tunneling. 
+          • Particle in a three dimensional box, Degenerate states. 
+          • Exposure to Harmonic Oscillator and Hydrogen Atom without deriving the general solution. 
+          • Quantum Statistics: Maxwell Boltzmann, Bose Einstein and Fermi Dirac Statistics by detailed balance arguments. 
+          • Density of states. 
+          • Applications of B-E statistics: Lasers. Bose-Einstein Condensation. 
+          • Applications of F-D statistics: Free electron model of electrons in metals. Concept of Fermi Energy. 
+          • Elementary Ideas of Band Theory of Solids. 
+          • Exposure to Semiconductors, Superconductors, Quantum Communication and Quantum Computing.
+    </td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="PH102m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>PH102 Electricity and Magnetism</h2>
+    </div>
+    <div class="modal-body">
+      <table class="otable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core Course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>
+           Review of vector calculus: Spherical polar and
+          cylindrical coordinates; gradient, divergence and
+          curl;
+           Divergence and Stokes` theorems;
+           Divergence and curl of electric field, Electric
+          potential, properties of conductors;
+           Poisson’s and Laplace’s equations, uniqueness
+          theorems, boundary value problems, separation of
+          variables, method of images, multipoles;
+           Polarization and bound charges, Gauss` law in the
+          presence of dielectrics, Electric displacement D
+          and boundary conditions, linear dielectrics;
+           Divergence and curl of magnetic field, Vector
+          potential and its applications;
+           Magnetization, bound currents, Ampere`s law in
+          magnetic materials, Magnetic field H, boundary
+          conditions, classification of magnetic materials;
+           Faraday’s law in integral and differential forms,
+          Motional emf, Energy in magnetic fields,
+          Displacement current, Maxwell’s equations,
+           Electromagnetic (EM) waves in vacuum and
+          media, Energy and momentum of EM waves,
+          Poynting`s theorem;
+           Reflection and transmission of EM waves across
+          linear media
+    </td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="HS201m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>HS201 Economics</h2>
+    </div>
+    <div class="modal-body">
+      <table class="otable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core Course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>
+          Basic economic problems. resource constraints and Welfare maximizations. Nature of Economics: Positive and normative economics; Micro and macroeconomics, Basic concepts in economics. The role of the State in economic activity; market and government failures; New Economic Policy in India. Theory of utility and consumer’s choice. Theories of demand, supply and market equilibrium. Theories of firm, production and costs. Market structures. Perfect and imperfect competition, oligopoly, monopoly. An overview of macroeconomics, measurement and determination of national income. Consumption, savings, and investments. Commercial and central banking. Relationship between money, output and prices. Inflation - causes, consequences and remedies. International trade, foreign exchange and balance payments, stabilization policies : Monetary, Fiscal and Exchange rate policies.
+    </td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="urbanm" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Urban Dance in India: A Brief & Partial Introduction in Theory & Practice</h2>
+    </div>
+    <div class="modal-body">
+      <table class="otable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>1-0-1-1</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core Course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>I</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>
+          Session1: Introduction to Basic Anatomy for Dance, Stretches, Strengthening, Isolation of parts of the body, Centering and Breathing techniques 
+          Session 2: Introduction to Indian Classical Dances
+          Session 3: Rhythm Patterns
+          Session 4: Basic Release Techniques and Jumps
+          Session 5: Floor-work and Grounding
+          Session 6: Improvisations and Contact
+          Session 7: Selected Introductions to Modern Indian choreographers - I
+          Session 8: Selected Introductions to Modern Indian choreographers - II
+          Session 9: Space in Dance
+          Session 10: Site-specific Improvisation
+
+    </td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="fineartsm" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Introduction to Fine Arts: Music</h2>
+    </div>
+    <div class="modal-body">
+      <table class="otable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>0-0-1-1</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Common for all branches</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>I</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>
+          Chapter 1: Introduction to Hindustani Classical Music
+          Chapter 2: Hindustani Classical Instruments
+          Chapter 3: Paribhashaka Shabda
+          Chapter 4: Thaat, prahara
+          Chapter 5: Raaga
+          Chapter 6: Khayal
+          Chapter 7: Gharanas
+          Chapter 8: Vocal related musical Instruments
+          Chapter 9: Study of Alankaras
+          Chapter 10: Taal
+          Chapter 11: Raag Yaman
+          Chapter 12: Raag Bhimpalas
+          Chapter 13: Bhajan and application of raga in film music
+    </td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var menvi_study = document.getElementById('envistudym');
+var benvi_study = document.getElementById("envi_study");
+var senvi_study = document.getElementsByClassName("close")[0];
+benvi_study.onclick = function() {
+    menvi_study.style.display = "block";
+}
+senvi_study.onclick = function() {
+    menvi_study.style.display = "none";
+}
+
+var mch101 = document.getElementById('CH101m');
+var bch101 = document.getElementById("CH101");
+var sch101 = document.getElementsByClassName("close")[1];
+bch101.onclick = function() {
+    mch101.style.display = "block";
+}
+sch101.onclick = function() {
+    mch101.style.display = "none";
+}
+
+var mch111 = document.getElementById('CH111m');
+var bch111 = document.getElementById("CH111");
+var sch111 = document.getElementsByClassName("close")[2];
+bch111.onclick = function() {
+    mch111.style.display = "block";
+}
+sch111.onclick = function() {
+    mch111.style.display = "none";
+}
+
+var mph101 = document.getElementById('PH101m');
+var bph101 = document.getElementById("PH101");
+var sph101 = document.getElementsByClassName("close")[3];
+bph101.onclick = function() {
+    mph101.style.display = "block";
+}
+sph101.onclick = function() {
+    mph101.style.display = "none";
+}
+
+var mph102 = document.getElementById('PH102m');
+var bph102 = document.getElementById("PH102");
+var sph102 = document.getElementsByClassName("close")[4];
+bph102.onclick = function() {
+    mph102.style.display = "block";
+}
+sph102.onclick = function() {
+    mph102.style.display = "none";
+}
+
+var mhs201 = document.getElementById('HS201m');
+var bhs201 = document.getElementById("HS201");
+var shs201 = document.getElementsByClassName("close")[5];
+bhs201.onclick = function() {
+    mhs201.style.display = "block";
+}
+shs201.onclick = function() {
+    mhs201.style.display = "none";
+}
+
+var murban = document.getElementById('urbanm');
+var burban = document.getElementById("urban");
+var surban = document.getElementsByClassName("close")[6];
+burban.onclick = function() {
+    murban.style.display = "block";
+}
+surban.onclick = function() {
+    murban.style.display = "none";
+}
+
+var mfinearts = document.getElementById('fineartsm');
+var bfinearts = document.getElementById("finearts");
+var sfinearts = document.getElementsByClassName("close")[7];
+bfinearts.onclick = function() {
+    mfinearts.style.display = "block";
+}
+sfinearts.onclick = function() {
+    mfinearts.style.display = "none";
+}
+
+window.onclick = function(event){
+  if(event.target == menvi_study){
+    menvi_study.style.display = "none";
+  }
+  if(event.target == mch101){
+    mch101.style.display = "none";
+  }
+  if(event.target == mch111){
+    mch111.style.display = "none";
+  }
+  if(event.target == mph101){
+    mph101.style.display = "none";
+  }
+  if(event.target == mph102){
+    mph102.style.display = "none";
+  }
+  if(event.target == mhs201){
+    mhs201.style.display = "none";
+  }
+  if(event.target == murban){
+    murban.style.display = "none";
+  }
+  if(event.target == mfinearts){
+    mfinearts.style.display = "none";
+  }
+}
+</script>    
+</body>
+</html>
+

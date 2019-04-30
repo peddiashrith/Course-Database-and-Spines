@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mechanical Engineering</title>
+
+ <script type="text/javascript"></script>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width="device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="menustyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+
+<style type="text/css">
+
+body{
+      background-color: #CCD2FF ;
+    }
+
+  #heading
+        {
+          width: 100%;
+          margin: auto;
+          color: white;
+          height: 200px;
+          background-image: linear-gradient(to right, #110062, #0213F4) ;*/
+          /*background-color: #110062;
+          /*margin-left: 20px;*/
+          size: 30px;
+          font-size: 50px;
+          font-family: "Caudex";
+          text-align: left;
+          vertical-align: middle;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          /*border: 5px solid darkblue;*/
+        }
+  }
+
+table {
+font-family: arial, sans-serif;
+width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    font-size: 20px;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.arrow{
+  stroke:rgb(0,0,0);
+  marker-end:url(#markerArrow)
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+	</style>
+</head>
+
+<body>
+
+
+	<script type="text/javascript">
+		var mainlist = []
+		
+		var me111 = []
+		me111.push("ME111")
+		mainlist.push(me111)
+		
+		var me113 = []
+		me113.push("ME113")
+		mainlist.push(me113)
+
+		var me201 = []
+		me201.push("ME201")
+		mainlist.push(me201)
+
+		var me202 = []
+		me202.push("ME202")
+		mainlist.push(me202)
+
+		var me203 = []
+		me203.push("ME203")
+		mainlist.push(me203)
+
+		var me204 = []
+		me204.push("ME204")
+		me204.push("ME208")
+		mainlist.push(me204)
+
+		var me205 = []
+		me205.push("ME205")
+		me205.push("ME111")
+		mainlist.push(me205)
+
+		var me206 = []
+		me206.push("ME206")
+		me206.push("ME201")
+		mainlist.push(me206)
+
+		var me207 = []
+		me207.push("ME207")
+		mainlist.push(me207)
+
+		var me212 = []
+		me212.push("ME212")
+		me212.push("ME203")
+		mainlist.push(me212)
+
+		var me301 = []
+		me301.push("ME301")
+		mainlist.push(me301)
+
+		var me302 = []
+		me302.push("ME302")
+		mainlist.push(me302)
+
+		var me303 = []
+		me303.push("ME303")
+		me303.push("ME201")
+		mainlist.push(me303)
+
+		var me304 = []
+		me304.push("ME304")
+		me304.push("ME206")
+		mainlist.push(me304)
+
+		var me305 = []
+		me305.push("ME305")
+		mainlist.push(me305)
+
+		var me311 = []
+		me311.push("ME311")
+		me311.push("ME208")
+		mainlist.push(me311)
+
+		var me312 = []
+		me312.push("ME312")
+		mainlist.push(me312)
+
+		var me314 = []
+		me314.push("ME314")
+		mainlist.push(me314)
+
+		var me208 = []
+		me208.push("ME208")
+		mainlist.push(me208)
+
+		function joinnodes(give)
+		{
+			document.getElementById(give).setAttribute("fill","#00BCFF")
+			document.getElementById(give).setAttribute("r","55")
+			var index = 0
+			for(var i=0;i<mainlist.length;i++)
+			{
+				var temp = mainlist[i];
+				if(temp[0] == give)
+				{
+					index = i;
+					break;
+				}
+			}
+			var cars = mainlist[index];
+			for(var a=1;a<cars.length;a++)
+			{
+				var lineid = cars[0] + "to" + cars[a];
+				document.getElementById(lineid).setAttribute("stroke-width","2")
+				document.getElementById(cars[a]).setAttribute("fill","#00BCFF")
+				document.getElementById(cars[a]).setAttribute("r","55")
+				joinnodes(cars[a]);
+			}
+		}
+		function tjoinnodes(give1)
+		{
+			give = give1[1] + give1[2] + give1[3] + give1[4] + give1[5]
+			document.getElementById(give).setAttribute("fill","#00BCFF")
+			document.getElementById(give).setAttribute("r","55")
+			var index = 0
+			for(var i=0;i<mainlist.length;i++)
+			{
+				var temp = mainlist[i];
+				if(temp[0] == give)
+				{
+					index = i;
+					break;
+				}
+			}
+			var cars = mainlist[index];
+			for(var a=1;a<cars.length;a++)
+			{
+				var lineid = cars[0] + "to" + cars[a];
+				document.getElementById(lineid).setAttribute("stroke-width","2")
+				document.getElementById(cars[a]).setAttribute("fill","#00BCFF")
+				document.getElementById(cars[a]).setAttribute("r","55")
+				joinnodes(cars[a]);
+			}
+		}
+		function removenodes(give)
+		{
+			document.getElementById(give).setAttribute("fill","#110062")
+			document.getElementById(give).setAttribute("r","50")
+			var index = 0
+			for(var i=0;i<mainlist.length;i++)
+			{
+				var temp = mainlist[i];
+				if(temp[0] == give)
+				{
+					index = i;
+					break;
+				}
+			}
+			var cars = mainlist[index];
+			for(var a=1;a<cars.length;a++)
+			{
+				var lineid = cars[0] + "to" + cars[a];
+				document.getElementById(lineid).setAttribute("stroke-width","0")
+				document.getElementById(cars[a]).setAttribute("fill","#110062")
+				document.getElementById(cars[a]).setAttribute("r","50")
+				removenodes(cars[a]);
+			}
+		}
+		function tremovenodes(give1)
+		{
+			give = give1[1] + give1[2] + give1[3] + give1[4] + give1[5]
+			document.getElementById(give).setAttribute("fill","#110062")
+			document.getElementById(give).setAttribute("r","50")
+			var index = 0
+			for(var i=0;i<mainlist.length;i++)
+			{
+				var temp = mainlist[i];
+				if(temp[0] == give)
+				{
+					index = i;
+					break;
+				}
+			}
+			var cars = mainlist[index];
+			for(var a=1;a<cars.length;a++)
+			{
+				var lineid = cars[0] + "to" + cars[a];
+				document.getElementById(lineid).setAttribute("stroke-width","0")
+				document.getElementById(cars[a]).setAttribute("fill","#110062")
+				document.getElementById(cars[a]).setAttribute("r","50")
+				removenodes(cars[a]);
+			}
+		}
+		console.log()
+	</script>
+
+	<body id="cds">
+
+<div id="heading">
+    <img src="logo_white.png" width="200px" height="160px">
+    Course Database and Spines    
+</div>
+
+<br>
+<br>
+<div class="container">
+   <p align="center"> 
+  <button type="button"  class="button2" data-toggle="collapse" data-target="#demo"><span>Select a Branch </span></button>  
+    </p> 
+    <center>
+  <div id="demo" class="collapse">
+    
+    
+    <br>
+
+
+    <center><div class="csebox">
+      <button type="button" class="button1" onclick="window.open('realcse.html', '_self')">Computer Science & Engineering</button>
+    </div>
+  </center>
+    <br>
+    <center>
+    <div class="eebox">
+      <button type="button" class="button3" onclick="window.open('realee.html', '_self')">Electrical Engineering</button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="mechbox">
+      <button type="button" class="button4" onclick="window.open('realmec.html', '_self')">Mechanical Engineering </button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="othbox">
+      <button type="button" class="button5" onclick="window.open('othercourses.html', '_self')">Other Courses</button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="othbox">
+      <button type="button" class="button6" onclick="window.open('electives.html', '_self')">Electives</button>
+    </div>
+    </center>
+</center> 
+  </center>
+
+  </div>
+</div>
+
+
+
+</div>
+
+
+	<center>
+	<svg height="1000" width="1500">
+    <defs>
+        <marker id="markerArrow" markerWidth="50" markerHeight="50" refX="45" refY="6" orient="auto">
+            <path d="M2,2 L2,11 L10,6 L2,2" style="fill: red;" />
+        </marker> 
+    </defs>
+
+    <line id="ME205toME111" stroke-width="0" style="stroke:black" x2="200" x1="100" y2="250" y1="100" class="arrow"/>
+    <line id="ME206toME201" stroke-width="0" style="stroke:black" x2="700" x1="700" y2="400" y1="250" class="arrow"/>
+    <line id="ME212toME203" stroke-width="0" style="stroke:black" x2="400" x1="700" y2="400" y1="100" class="arrow"/>
+    <line id="ME303toME201" stroke-width="0" style="stroke:black" x2="1000" x1="700" y2="400" y1="250" class="arrow"/>
+    <line id="ME304toME206" stroke-width="0" style="stroke:black" x2="950" x1="700" y2="550" y1="400" class="arrow"/>
+    <line id="ME311toME208" stroke-width="0" style="stroke:black" x2="450" x1="700" y2="550" y1="550" class="arrow"/>
+    <line id="ME204toME208" stroke-width="0" style="stroke:black" x2="950" x1="700" y2="250" y1="550" class="arrow"/>
+    
+
+    <circle onmouseover="joinnodes('ME111')" onmouseleave="removenodes('ME111')" id="ME111" cx="100" cy="100" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME111" onmouseover="tjoinnodes('TME111')" onmouseleave="tremovenodes('TME111')" x="100" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me111</text>
+
+    <circle onmouseover="joinnodes('ME113')" onmouseleave="removenodes('ME113')" id="ME113" cx="400" cy="100" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME113" onmouseover="tjoinnodes('TME113')" onmouseleave="tremovenodes('TME113')" x="400" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me113</text>
+
+    <circle onmouseover="joinnodes('ME203')"  onmouseleave="removenodes('ME203')" id="ME203" cx="700" cy="100" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME203" onmouseover="tjoinnodes('TME203')" onmouseleave="tremovenodes('TME203')" x="700" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me203</text>
+
+    <circle onmouseover="joinnodes('ME207')" onmouseleave="removenodes('ME207')" id="ME207" cx="1000" cy="100" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME207" onmouseover="tjoinnodes('TME207')" onmouseleave="tremovenodes('TME207')" x="1000" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me207</text>
+
+    <circle onmouseover="joinnodes('ME205')"  onmouseleave="removenodes('ME205')" id="ME205" cx="200" cy="250" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME205" onmouseover="tjoinnodes('TME205')" onmouseleave="tremovenodes('TME205')" x="200" y="250" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me205</text>
+
+    <circle onmouseover="joinnodes('ME201')"  onmouseleave="removenodes('ME201')" id="ME201" cx="700" cy="250" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME201" onmouseover="tjoinnodes('TME201')" onmouseleave="tremovenodes('TME201')" x="700" y="250" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me201</text>
+
+    <circle onmouseover="joinnodes('ME204')" onmouseleave="removenodes('ME204')" id="ME204" cx="950" cy="250" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME204" onmouseover="tjoinnodes('TME204')" onmouseleave="tremovenodes('TME204')" x="950" y="250" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me204</text>
+
+    <circle onmouseover="joinnodes('ME202')"  onmouseleave="removenodes('ME202')" id="ME202" cx="100" cy="400" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME202" onmouseover="tjoinnodes('TME202')" onmouseleave="tremovenodes('TME202')" x="100" y="400" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me202</text>
+
+    <circle onmouseover="joinnodes('ME212')"  onmouseleave="removenodes('ME212')" id="ME212" cx="400" cy="400" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text  id="TME212" onmouseover="tjoinnodes('TME212')" onmouseleave="tremovenodes('TME212')"x="400" y="400" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me212</text>
+
+    <circle onmouseover="joinnodes('ME206')"  onmouseleave="removenodes('ME206')" id="ME206" cx="700" cy="400" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME206" onmouseover="tjoinnodes('TME206')" onmouseleave="tremovenodes('TME206')" x="700" y="400" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me206</text>
+
+    <circle onmouseover="joinnodes('ME303')" onmouseleave="removenodes('ME303')" id="ME303" cx="1000" cy="400" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME303" onmouseover="tjoinnodes('TME303')" onmouseleave="tremovenodes('TME303')" x="1000" y="400" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me303</text>
+
+    <circle onmouseover="joinnodes('ME305')"  onmouseleave="removenodes('ME305')" id="ME305" cx="200" cy="550" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME305" onmouseover="tjoinnodes('TME305')" onmouseleave="tremovenodes('TME305')" x="200" y="550" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me305</text>
+
+    <circle onmouseover="joinnodes('ME311')" onmouseleave="removenodes('ME311')" id="ME311" cx="450" cy="550" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME311" onmouseover="tjoinnodes('TME311')" onmouseleave="tremovenodes('TME311')" x="450" y="550" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me311</text>
+
+    <circle onmouseover="joinnodes('ME208')" onmouseleave="removenodes('ME208')" id="ME208" cx="700" cy="550" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME208" onmouseover="tjoinnodes('TME208')" onmouseleave="tremovenodes('TME208')" x="700" y="550" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me208</text>
+
+    <circle onmouseover="joinnodes('ME304')" onmouseleave="removenodes('ME304')" id="ME304" cx="950" cy="550" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME304" onmouseover="tjoinnodes('TME304')" onmouseleave="tremovenodes('TME304')" x="950" y="550" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me304</text>
+
+	<circle onmouseover="joinnodes('ME312')"  onmouseleave="removenodes('ME312')" id="ME312" cx="100" cy="700" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME312" onmouseover="tjoinnodes('TME312')" onmouseleave="tremovenodes('TME312')" x="100" y="700" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me312</text>    
+
+    <circle onmouseover="joinnodes('ME302')"  onmouseleave="removenodes('ME302')" id="ME302" cx="400" cy="700" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME302" onmouseover="tjoinnodes('TME302')" onmouseleave="tremovenodes('TME302')" x="400" y="700" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me302</text>
+
+    <circle onmouseover="joinnodes('ME301')"  onmouseleave="removenodes('ME301')" id="ME301" cx="700" cy="700" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME301" onmouseover="tjoinnodes('TME301')" onmouseleave="tremovenodes('TME301')" x="700" y="700" alignment-baseline="middle" text-anchor="middle" font-family="Constantia"font-size="25" fill="white"  >me301</text>
+
+    <circle onmouseover="joinnodes('ME314')" onmouseleave="removenodes('ME314')" id="ME314" cx="1000" cy="700" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME314" onmouseover="tjoinnodes('TME314')" onmouseleave="tremovenodes('TME314')" x="1000" y="700" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me314</text>
+
+</svg>
+</center>
+
+<div id="ME111m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME111 Engineering Graphics Lab</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>1-0-3-5</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		<b>Engineering Graphics with mini-drafter:</b> Around half a semester and bit more with following topics to be covered.<br>
+			•	Introduction to Engineering Graphics <br>
+			•	Curves<br>
+			•	Projections of Points<br>
+			•	Projection of Lines<br>
+			•	Projection of Planes<br>
+			•	Projections on Auxiliary Planes<br>
+			•	Projections of Solids<br>
+			•	Sections of Solids<br>
+			•	Intersections of Solids<br>
+			<b>Engineering Graphics with 2D Drafting Software:</b> 5 weekly computer laboratory sessions covering above using AutoCAD® as a drafting software, 5th session on Isometric Projections.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME113m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME113 Hands on Engineering Lab</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>0-0-3-3</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		<b>List of Experiments (Mechanical Workshop)</b><br>
+			•	To make a Square-fit from the given mid steel pieces (Fitting)<br>
+			•	To make a V-fit from the given mid steel pieces (Fitting)<br>
+			•	To make a rectangular tray as per required dimensions (Sheet Metal)<br>
+			•	To build a transition piece (Sheet Metal)<br>
+			•	To make a Butt joint using the given two M.S pieces (Arc welding)<br>
+			•	To make a lap joint using the given two M.S pieces (Arc welding)<br>
+			•	To build a pipe-line using fittings for given flow circuit (Plumbing)<br>
+			<b>List of Experiments (Electrical Workshop)</b><br>
+			•	To control one lamp by a one switch with provision for plug socket with switch control (Electrical wiring)<br>
+			•	To do stair case wiring (i.e. control of one lamp by two switches fixed at two different places) (Electrical wiring)<br>
+			•	Measurement of hot and cold resistance of filament <br>
+			•	Improvement of Power Factor <br>
+			•	Calibration of Energy meter <br>
+			•	Measurement of Power using three ammeter/voltmeter method <br>
+			<b>List of Experiments (Electronics)</b><br>
+			•	Understanding breadboard, One-way traffic <br>
+			•	Introduction to Arduino and Buzzer <br>
+			•	Using Arduino speed measurement of motor/ glowing of LED <br>
+			•	Control of water level using Arduino <br>
+			•	Line follower using Arduino<br>
+
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME203m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME203 Fluid Mechanics</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-1-8</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		<b>Introduction:</b> Scope, definition of fluid, fluid as continuum, fluid properties: density, specific weight, specific gravity, viscosity, kinematic viscosity, classification of fluid motion<br>
+			<b>Fluid Statics:</b> Pressure at a point, basic equation for pressure field, pressure variation (fluid at rest): incompressible and compressible fluid, standard atmosphere, Measurement of pressure: manometry, Hydrostatic Force on a plane and curve surface, pressure prism, Buoyancy, flotation and stability, pressure variation in a fluid with rigid body motion – linear motion, rigid body rotation.<br>
+			<b>Elementary Fluid Dynamics:</b> Newton’s second law along and normal to a streamline, physical interpretation, static, stagnation pressure, Use of Bernoulli Eq.: free jets, confined flows, restrictions on the use of Bernoulli Eq.: compressibility effects, unsteady effects, rotational effects and others.
+			<b>Fluid Kinematics:</b> The velocity field: Eulerian and Lagrangian flow descriptions, 1D, 2D and 3D flows, steady and unsteady flows, streamlines, streaklines and pathlines. Acceleration field: material derivative, unsteady and convective effects. Control volume and system representation: Reynolds Transport Theorem, physical interpretation, steady, unsteady effects, moving control volume.<br>
+			<b>Integral approach:</b> Conservation of mass: derivation of continuity, fixed, non-deforming control volume, moving non-deforming control volume, deforming control volume. Conservation of momentum: linear momentum and moment of momentum equation and their application. First law of thermodynamics: derivation & application of energy Eq., comparison of energy equation with Bernoulli’s equation, application of energy equation to non-uniform flows, combination of energy equation and moment of momentum equation.<br>
+			<b>Differential approach:</b> linear motion and deformation, angular motion and deformation, Conservation of mass: differential form of continuity equation, stream function, Conservation of linear momentum: description of forces acting on the differential element, equations of motion, Inviscid Flow:  Euler’s equation of motion, the Bernoulli’s equation, Irrotational flow, Bernoulli equation for irrotational flow, the velocity potential, flow net.<br>
+			<b>Viscous flow:</b> Stress deformation relationships, Navier-Stokes Eqs., Simple solutions for viscous compressible fluids: parallel flow through straight channel, Couette, plane Poiseuille, Hagen- Poiseuille, flow betn. two co-axial cylinders.
+			<b>Dimensional analysis and modelling:</b> Importance of dimensional analysis, Buckingham’s Pi Theorem, Dimensionless groups, Dimensional analysis through governing differential equations<br>
+			<b>Viscous Flow in Pipes:</b> General characteristics of pipe flow – laminar or turbulent flow, entrance region and fully developed flow, pressure and shear stress. Fully Developed Turbulent Flow – transition from laminar to turbulent flow, turbulent shear stress, turbulent velocity profile. Moody chart, minor losses, non-circular conduits, single pipes and multiple pipe systems, Pipe Flow rate measurement.<br>
+			<b>Flow Over Immersed Bodies:</b> Boundary layer characteristics: boundary layer structure and thickness on a flat plate, Blasius boundary layer, momentum integral boundary layer equation for a flat plate, transition from laminar to turbulent, momentum integral boundary layer equation for a flat plate, turbulent boundary layer flow.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME208m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME208 Mechanical Measurements </h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		<b>Introduction:</b> generalized measurement system, static
+			calibration, calibration, random errors, uncertainty analysis,
+			dynamic characteristics. Zero, first and second order
+			measurement systems.<br>
+			<b>Temperature measurement:</b> Introduction to temperature
+			measurement. Thermocouples: laws governing their use;
+			Static and Dynamic characteristics. Other measurement
+			techniques.<br>
+			<b>Pressure measurement:</b> Manometers, elastic transducers,
+			static and dynamic characteristics. Other devices for
+			measurement.<br>
+			<b>Flow measurement:</b> obstruction meters, variable area meters,
+			velocity measurement.<br>
+			<b>Strain measurement:</b> electrical type strain gauges, metallic
+			resistance strain gauge, selection and installation of strain
+			gages, circuitry for strain measurement, temperature
+			compensation, calibration, semi-conductor strain gauges, stress
+			analysis methods<br>
+			<b>Force and torque measurement:</b> standards, elastic
+			transducers, strain gage load cells, hydraulic and pneumatic
+			systems, torque measurement, combined force and moment
+			measurement.<br>
+			<b>Measurement of motion:</b> LVDT, general theory of seismic
+			instruments, vibrometers and accelerometers, piezoelectric
+			accelerometers and vibrometers-circuitry and calibration,
+			exciter systems, vibration test methods.<br>
+			<b>Signal conditioning:</b> Operational amplifiers, filters.<br>
+			<b>Sampling, and data acquisition:</b> Sampling concepts, Bits
+			and words, number systems, Analog to digital conversion
+			and digital to analog conversion, data acquisition systems and
+			components, analog input/output communication, Digital
+			input/output communication.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME205m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME205 Machine Drawing and 3D Modelling</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>1-0-2-4</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		<b>Introduction:</b> Engineering design process and drawings. Drawing standards. Computer aided drafting and use of software packages for engineering drawings<br>
+			<b>Detachable Fasteners:</b> Screw threads: conventional representations and specifications; Threaded fasteners: Types, forms, standard, and specifications; Drawing of connections; Foundation bolts; Locking Devices: Classification, principles of operation, standard types and their proportions; Shaft Couplings: Common types, standard proportions for some couplings; Pipe Joints, common pipe connections<br> 
+			<b>Permanent Fastenings:</b> Rivets: Standard forms and proportions; Riveted Joints: Common types of joints, terminology, proportions and representation; Welds: Types of welds and welded joints, edge preparation, specifications, and representation of welds on drawings<br>
+			<b>Assembly Drawings:</b> with sectioning and bill of materials.  Assemblies involving machine elements like shafts, couplings, bearing, pulleys, gears, belts, brackets. Engine mechanisms-assembly. Detailed part drawings from assembly drawings
+			<b>Tool Drawings:</b> Jigs and fixtures<br>
+			<b>Production Drawings:</b> Limits, fits, and tolerances of size and form; Types and grade, use of tolerance tables and specification of tolerances, form and cumulative tolerances, tolerance dimensioning; Surface quality symbols, terminology and representation on drawings, correlation of tolerances and surface quality with manufacturing techniques
+			3D Modelling exercise: use of Reverse Engineering to disassemble and measure components
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: ME111</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME204m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME204 Manufacturing Process I</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>2-1-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Casting processes: dispensable and permanent mould
+			processes; analysis of melting, pouring and solidification
+			phenomena; design of pattern, core, feeder and gating
+			system; casting defects and inspection.
+			Joining processes: fusion and solid-state welding; brazing
+			and soldering; weld joint design, cooling rate, and joint
+			properties; welding defects and inspection.
+			Bulk and Sheet Forming processes: rolling, forging,
+			extrusion and drawing; sheet metal working; forming limit
+			diagram; loads, friction and lubrication; forming defects and
+			inspection.
+			Powder processing: Powder manufacture, characterization,
+			compaction and sintering; metal injection moulding; hot and
+			cold iso-static pressing.
+			Polymers and Composites: Thermoplastics, thermosets,
+			elastomers and composites; related processes; injection
+			mould design; moulding defects and inspection.
+			Advanced processes: Free form fabrication (rapid
+			prototyping), and net shape manufacturing processes.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: ME208</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME202m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME202 Engineering Materials</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>2-1-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Economic, Environmental and Societal Issues in
+			Materials Science & Engineering
+			Basic Materials Science: Crystallography, phase diagrams,
+			grain boundaries, dislocation movements and their effects on
+			properties
+			Material properties: Stress-strain relationships, Tensile
+			strength, Toughness, Impact Strength, Ductility, Malleability,
+			Stress intensity, Fatigue
+			Failure: by Oxidation, Corrosion (Types, impact on material
+			properties), prevention, Passivation, Selective Leaching,
+			Stress Corrosion Cracking, Creep, Embrittlement
+			Strengthening mechanisms: Solute Hardening, chemical
+			hardening, dispersion hardening, cold working, strain
+			hardening
+			Aluminium alloys: Properties, phase diagrams and uses
+			Copper alloys: Properties phase diagrams and uses
+			Ferrous Alloys (Steels): Types, properties, iron-carbon
+			phase diagrams
+			Material Selection: Ashby Charts
+			Ceramics: Structure and Properties, Mechanical Properties
+			of Ceramics, Types and Application of Ceramics, Fabrication
+			and Processing of Ceramics
+			Polymers: Molecules, Structures and Shapes, Thermosetting
+			& Thermoplastic, Polymer Crystals, Polymer Characteristics
+			and Applications, Synthesis, Processing and Degradation.
+			Composites: Processing of Fiber Reinforced Composites,
+			Structural Composites, Application of Composites
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME212m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME212 Fluid Mechanics Lab</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>0-0-3-3</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		List of Experiments:
+			 Stability of floating bodies for determining the metacentre
+			and buoyancy
+			 Reynolds experiment for laminar/turbulent flow
+			visualisation
+			 Measurement of discharge coefficient for different shaped
+			orifices with varying head
+			 Demonstration of Bernoulli’s principle
+			 Visualisation of Free and Forced vortices
+			 Demonstration of linear momentum and impact forces of
+			Jet for different deflection angles
+			 Pressure loss in pipe friction for laminar/turbulent flow
+			 Minor losses in Pipe system (fittings: bend, elbow,
+			contraction/expansion)
+			 Major losses in Pipe system: Effect of pipe material,
+			dimensions
+			 Fluidized Granular Bed
+			 Submerged Jet
+			 Flow Measurement by Venturi-meter, Orifice-meter &
+			Rota-meter
+			 Heleshaw Apparatus
+			 Hydraulic Jump
+			 Course project set-up
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: ME203</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME206m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME206 Mechanics of Materials</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-1-0-8</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		 Mechanics of material approach – axial forces, thin
+			cylinders and spheres, simple (direct) shear, torsion of
+			circular cross-section shafts; Beam bending – Euler –
+			Bernoulli model, deflections, normal and shear stresses.
+			Statically indeterminate problems in bending.
+			Unsymmetrical bending problems. Combined stresses,
+			Mohr’s circle diagram for stress and principal stresses.
+			Theories of failure.
+			 Experimental methods of stress analysis – strain
+			gages, strain rosettes and photo elasticity.
+			 Theory of elasticity approach – equilibrium equations,
+			strain displacement relation, plane stress and plane
+			strain, stresses in thick cylinders.
+			 Energy methods – Castigliano’s theorem and its
+			applications. Potential energy methods and applications.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: ME201</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME303m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME303 Kinematics and Dynamics of Machines</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-1-0-8</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Introduction to Mechanisms. Position, velocity and acceleration analysis. Design of Cam Follower Mechanisms. Gear tooth profiles, spur gears and helical gears. Epicyclic Gear Trains. Dynamic Analysis of Mechanisms. Balancing. Analysis and Applications of Discrete and Continuous System Vibration.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: ME201</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME305m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME305 Manufacturing Processes II </h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>2-1-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Material Removal Processes: Mechanics of Machining, tool geometry and materials, chip formation, tool temperature, tool wear, tool life, surface finish, machinability. Optimization of machining processes. Machine Tools: Generation of surfaces by machining, basic operations on shaping, slotting and planning machines, lathe, drilling and boring machines and grinding machines. Process Parameters and setups. Production Machines: Capstan and turret lathes, automats, broaching machines, centreless grinding machines. Special purpose machines for thread cutting and gear cutting (hobbing and shaping). Finishing processes honing, laping burnishing and deburring. Introduction to modern machining processes: EDM, ECM, LASER, Jigs and fixtures, principles of location and clamping, synthesis of simple jigs and fixtures. Principles of assembly engineering, theory of dimensional chains, fully interchangeable and selective assembly. Introduction to Numerical Control.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME311m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME311 Mechanical Measurements Lab </h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>0-0-3-3</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		List of experiments:
+			•	Study of the output characteristics of RC circuit for various inputs (Sine wave, square wave and step input)
+			•	Study of the output characteristics of LRC circuit for various inputs (Sine wave, square wave and step input)
+			•	Study of the working of orificemeter, venturimenter and rotameter
+			•	Steady state and transient calibration of temperature sensors (thermocouple and RTD)
+			•	Steady state and transient calibration of pressure sensors 
+			•	Measurement of rotational speed by encoder, infrared sensor and stroboscope
+			•	Measurement of stress/strain through strain gage rosettes
+			•	Utility of operational amplifiers for generation of square wave, differentiator and integrator
+			•	Study of Analog to digital converter and digital to analog converter
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: ME208</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME304m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME304 Machine Design</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-1-0-8</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		 Introduction to Design Review of Failure theories
+			(Static and Fatigue) –: Failures Resulting from Static
+			Loading, Fatigue Failure Resulting from Variable Loading
+			 Shafts and couplings: - Design of Shafts, keys and
+			keyways, Couplings, Analysis of clutches and brakes
+			 Bearings: Theories of lubrication to motivate design of
+			rolling element bearings and hydrodynamic bearings,
+			Design of hydrodynamic bearings for various types of shaft
+			loadings and end conditions, Choice of rolling element
+			bearings from charts
+			 Gears: Gear force analysis, Basic of gear nomenclature of
+			spur, helical, bevel and worm and worm gears; Design of
+			gears (Spur gears): - Stresses induced in gears, Lewis
+			bending equations, AGMA based calculation of pitting and
+			bending stresses and strengths, Calculation of appropriate
+			safety factors and power rating, Design of spur gears for
+			simple power transmission; Overview of procedures
+			involved in design of helical, bevel and worm gears.
+			Special requirements in these types of gears are to be
+			emphasized without going into the details.
+			 Design of Springs: Basic spring nomenclature: - Forces
+			deflection and stiffness, Various spring configurations,
+			Materials for Spring; Designing of helical compression
+			springs for static and fatigue loads
+			 Design of Belts: Nomenclature, types of drives, derivation
+			of belting equation, Design of flat belt and ‘V’ belt for
+			simple power transmission between shafts. Choices of
+			pulleys appropriate for the drives
+			 Design of fasteners, rivets and dowel pins: Nomenclature
+			for bolts and screws, Concept of friction between threads.
+			Analysis and applications of power screws, Choice of
+			appropriate bolts, screws for joining simple mechanical
+			members which are then subjected to tensile, compressive
+			and torsional loading, Preloading of bolted assembly, 
+			59
+			Design of bolts for static and dynamic loads. Concept of
+			joint stiffness factor;
+			 Design of joints: Choices of rivets and dowel pins for
+			taking shear loads, Determining shear loads, for various
+			types of eccentric loading conditions welded joints, 
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: ME206</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME312m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME312 Heat Transfer lab</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>0-0-3-3</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		1. Measurement of thermal conductivity of a
+			composite material
+			2. Measurement of convective heat transfer
+			coefficient
+			3. Transient heat conduction
+			4. Heat transfer through fins
+			5. Jet impinging
+			6. Boiling and Condensation
+			7. Critical heat flux measurement
+			8. Emissivity measurement
+			9. Heat flux meter calibration
+			10.Heat transfer in the tubular heat exchanger
+			11.Heat transfer by radiation
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME302m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME302 Applied Thermodynamics</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-1-0-8</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Introduction to the Course, General Scheme of things,
+			Energy Resources, Heat Engines. Recap of I law for
+			Closed and Open Systems. Classification of cycles as
+			Open/Closed, Refrigeration/Power, Multicomponent/
+			Single- component, Internal combustion/
+			external combustion, etc. Performance parameters:
+			Network, thermal efficiency, heat rate, specific fuel
+			consumption, work ratio, specific output, mean
+			effective pressure, volumetric efficiency, COP,
+			refrigeration effect. Carnot vs. other cycles. General
+			stoichiometry and definition of terms (rich mixture,
+			lean mixtures). Heat of formation, Heat of reaction,
+			Calorific Value of fuel, Estimation methods for
+			Calorific values, Exhaust Gas Analysis, Orsat
+			Apparatus.
+			Otto Cycles, Diesel Cycles, Air-standard cycles and
+			Actual cycles, Dual cycle, p-theta diagram.
+			Combustion and knocking in SI engine. Combustion
+			and knocking in CI engine. Carburetion. Brayton
+			cycle with explanation of various terms
+			Modifications of Brayton cycle. Rankine cycle.
+			Modifications to Rankine cycle. Feed Water Heaters
+			and analysis. Moisture separators/ application of
+			Rankine to Nuclear power plants. Vapour
+			Compression and Reverse Brayton Cycles Vapour
+			Absorption Cycles. Psychrometry. Reciprocating,
+			rotary and centrifugal Compressors.
+			Gas Power Cycles: Simple gas turbine cycle - single
+			and twin shaft arrangements, intercooling, reheating,
+			regeneration, closed cycles, optimal performance of
+			various cycles, Ideal vs Real cycles; Jet Propulsion: 
+			57
+			turbojet, turboprop, turbofan, ramjet, thrust and
+			propulsive efficiency; Rocket Propulsion;
+			Direct Energy Conversion: thermionic and
+			thermoelectric converters, photovoltaic generators,
+			MHD generators, fuel cells.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME301m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME301 Heat Transfer </h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>2-1-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Introduction: Typical heat transfer situations, Modes of heat transfer, Introduction to laws, some heat transfer parameters
+			Conduction: Fourier’s law and thermal conductivity, Differential equation of heat conduction, boundary conditions and initial conditions, Simple one dimensional steady state situations – plane wall, cylinder, sphere (simple and complex situations), concept of thermal resistance, concept of U, critical radius. variable thermal conductivity (exercise), Special one dimensional steady state situations: heat generation, pin fins, Other fin configurations (exercise), Two dimensional steady state situations, Transient conduction, Lumped capacitance model, One dimensional transient problems: analytical solutions, 1D Heisler charts, Product solutions, Numerical methods in conduction, Steady state 1D and 2D problems, 1D transient problems: Explicit and implicit	
+			Radiation: Basic ideas, spectrum, basic definitions, Laws of radiation, black body radiation, Planck’s law, Stefan Boltzman law, Wien’s Displacement law, Lambert cosine law, Radiation exchange between black surfaces, shape factor, Radiation exchange between gray surfaces – Radiosity-Irradiation method, Parallel plates, Enclosures (non-participating gas), Gas radiation	
+			Forced Convection: Concepts of fluid mechanics, Differential equation of heat convection, Laminar flow heat transfer in circular pipe: constant heat flux and constant wall temperature, thermal entrance region, Turbulent flow heat transfer in circular pipe, pipes of other cross sections, Heat transfer in laminar flow and turbulent flow over a flat plate, Reynolds analogy, Flow across a cylinder and sphere, flow across banks of tubes, impinging jets
+			Natural Convection: Introduction, governing equations, Vertical plate – Pohlhausen solution, horizontal cylinder, horizontal plate, enclosed spaces
+			Heat Exchangers: Types of heat exchangers, LMTD approach – parallel, counter-flow, multi-pass and cross flow heat exchanger, NTU approach: parallel, counter-flow, shell and tube, cross flow heat exchanger 	
+			Condensation and Boiling: Dimensionless parameters, boiling modes, correlations, forced convection boiling, laminar film condensation on a vertical plate, turbulent film condensation
+			Mass Transfer: Analogy between heat and mass transfer, mass diffusion, Fick’s law of diffusion, boundary conditions, steady mass diffusion through a wall, transient mass diffusion, mass convection, limitations of heat and mass transfer analogy.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME314m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME314 Kinematics and Dynamics of Machinery lab</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>0-0-3-3</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Fabrication or model demonstration of
+			●Lower and Upper joins
+			●Multi-degree of freedom linkages with verification of
+			Kutzback’s Equation
+			●Inversions of 4R, 3R-P and 2R-2P four-link linkages
+			● Grashof Criterion
+			● Approximate and Exact Straight line generating
+			mechanisms
+			●Pantograph Linkages
+			● Ackerman’s steering linkage
+			● Geneva Mechanism
+			●Simple, Compound and Planetary Gear trains
+			–Verification of velocity analysis, velocity ratio,
+			instantaneous centers
+			–Demonstration of inversion in synthesis of Cam
+			profiles
+			–Examination of geometry of involute gears in mesh
+			–Passive Vibration Analysis; Damped response
+			–Active Vibration Analysis; Frequency Response;
+			Resonance
+			–Vibration of two degree of freedom systems
+			–Balancing of rotating masses
+			–Balancing of reciprocating masses
+			–Critical speed of shafts
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME201m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME201 Engineering Mechanics</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>2-1-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Module 1: Introduction to Engineering Mechanics covering, Force Systems Basic concepts, Particle equilibrium in 2-D & 3-D; Rigid Body equilibrium; System of Forces, Coplanar Concurrent Forces, Components in Space – Resultant- Moment of Forces and its Application; Couples and Resultant of Force System, Equilibrium of System of Forces, Free body diagrams, Equations of Equilibrium of Coplanar Systems and Spatial Systems; Static Indeterminacy
+			Module 2: Friction covering, Types of friction, Limiting friction, Laws of Friction, Static and Dynamic Friction; Motion of Bodies, wedge friction, screw jack & differential screw jack;
+			Module 3: Basic Structural Analysis covering, Equilibrium in three dimensions; Method of Sections; Method of Joints; How to determine if a member is in tension or compression; Simple Trusses; Zero force members; Beams & types of beams; Frames & Machines;
+			Module 4: Centroid and Centre of Gravity covering, Centroid of simple figures from first principle, centroid of composite sections; Centre of Gravity and its implications; Area moment of inertia- Definition, Moment of inertia of plane sections from first principles, Theorems of moment of inertia, Moment of inertia of standard sections and composite sections; Mass moment inertia of circular plate, Cylinder, Cone, Sphere, Hook;
+			Module 5: Virtual Work and Energy Method- Virtual displacements, principle of virtual work for particle and ideal system of rigid bodies, degrees of freedom. Active force diagram, systems with friction, mechanical efficiency. Conservative forces and potential energy (elastic and gravitational), energy equation for equilibrium. Applications of energy method for equilibrium. Stability of equilibrium.
+			Module 6: Particles dynamics- 
+			Kinematics of Particles: 
+			Rectilinear motion, Plane curvilinear motion - rectangular coordinates, normal and tangential coordinates, polar coordinates, Space curvilinear - cylindrical, spherical (coordinates), Relative and Constrained motion.
+			Kinetics of Particles: 
+			Force, mass and acceleration – rectilinear and curvilinear motion, work and energy, impulse and momentum – linear and angular; Impact – Direct and Oblique.
+			Kinetics of System of Particles: 
+			Generalized Newton’s Second Law, Work-Energy, Impulse-Momentum, Conservation of Energy and Momentum 
+			Module 7: Introduction to Rigid body dynamics
+			Kinematics of Planar Rigid Bodies: 
+			Equations for rotation of a rigid body about a fixed axis, General plane motion, Instantaneous Center of Rotation in Plane Motion Plane Motion of a Particle Relative to a Rotating Frame. Coriolis Acceleration
+			Kinetics of Planar Rigid Bodies: 
+			Equations of Motion for a Rigid Body, Angular Momentum of a Rigid Body in Plane Motion, Plane Motion of a Rigid Body and D’Alembert’s Principle, Systems of Rigid Bodies, Constrained Plane Motion; Energy and Work of Forces Acting on a Rigid Body, Kinetic Energy of a Rigid Body in Plane Motion, Systems of Rigid Bodies, Conservation of Energy, Plane Motion of a Rigid Body - Impulse and Momentum, Systems of Rigid Bodies, Conservation of Angular Momentum.
+			Module 8: Mechanical Vibrations covering, Basic terminology, free and forced vibrations, resonance and its effects; Degree of freedom; Derivation for frequency and amplitude of free vibrations without damping and single degree of freedom system, simple problems, types of pendulum, use of simple, compound and torsion pendulums
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: ME111</h2>
+    </div>
+  </div>
+</div>
+
+<div id="ME207m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ME207 Thermodynamics</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>2-1-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Thermodynamic Systems, properties & state, process & cycle 
+			Heat & Work: Definition of work and its identification, work done at the moving boundary, Zeroth law, 
+			Properties of pure substance: Phase equilibrium, independent properties, and equations of state, compressibility factor, Tables of thermodynamic properties & their use, Mollier Diagram 
+			First law: First law for control mass & control volume for a cycle as well as for a change of state, internal energy & enthalpy, Specific heats; internal energy, enthalpy & specific heat of ideal gases. SS process, Transient processes. 
+			Second Law of Thermodynamics: Reversible process; heat engine, heat pump, refrigerator; Kelvin-Planck & Clausius statements ,Carnot cycle for pure substance & ideal gas, Concept of entropy; the Need of entropy definition of entropy; entropy of a pure substance; entropy change of a reversible & irreversible processes; principle of increase of entropy, thermodynamic property relation, corollaries of second law, Second law for control volume; SS & Transient processes; Reversible SSSF process; principle of increase of entropy, Understanding efficiency. 
+			Irreversibility and availability: Available energy, reversible work & irreversibility for control mass and control volume processes; second law efficiency. 
+			Thermodynamic relations: Clapeyron equation, Maxwell relations, Thermodynamic relation for enthalpy, internal energy, and entropy, expansively and compressibility factor, equation of state, generalized chart for enthalpy. 
+			Thermodynamic Cycles: Otto, Diesel, Duel and Joule
+			Third Law of Thermodynamics
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var mme111 = document.getElementById('ME111m');
+var bme111 = document.getElementById("ME111");
+var tbme111 = document.getElementById("TME111");
+var sme111 = document.getElementsByClassName("close")[0];
+bme111.onclick = function() {
+    mme111.style.display = "block";
+}
+tbme111.onclick = function() {
+    mme111.style.display = "block";
+}
+sme111.onclick = function() {
+    mme111.style.display = "none";
+}
+
+var mme113 = document.getElementById('ME113m');
+var bme113 = document.getElementById("ME113");
+var tbme113 = document.getElementById("TME113");
+var sme113 = document.getElementsByClassName("close")[1];
+bme113.onclick = function() {
+    mme113.style.display = "block";
+}
+tbme113.onclick = function() {
+    mme113.style.display = "block";
+}
+sme113.onclick = function() {
+    mme113.style.display = "none";
+}
+
+var mme203 = document.getElementById('ME203m');
+var bme203 = document.getElementById("ME203");
+var tbme203 = document.getElementById("TME203");
+var sme203 = document.getElementsByClassName("close")[2];
+bme203.onclick = function() {
+    mme203.style.display = "block";
+}
+tbme203.onclick = function() {
+    mme203.style.display = "block";
+}
+sme203.onclick = function() {
+    mme203.style.display = "none";
+}
+
+var mme208 = document.getElementById('ME208m');
+var bme208 = document.getElementById("ME208");
+var tbme208 = document.getElementById("TME208");
+var sme208 = document.getElementsByClassName("close")[3];
+bme208.onclick = function() {
+    mme208.style.display = "block";
+}
+tbme208.onclick = function() {
+    mme208.style.display = "block";
+}
+sme208.onclick = function() {
+    mme208.style.display = "none";
+}
+
+var mme205 = document.getElementById('ME205m');
+var bme205 = document.getElementById("ME205");
+var tbme205 = document.getElementById("TME205");
+var sme205 = document.getElementsByClassName("close")[4];
+bme205.onclick = function() {
+    mme205.style.display = "block";
+}
+tbme205.onclick = function() {
+    mme205.style.display = "block";
+}
+sme205.onclick = function() {
+    mme205.style.display = "none";
+}
+
+var mme204 = document.getElementById('ME204m');
+var bme204 = document.getElementById("ME204");
+var tbme204 = document.getElementById("TME204");
+var sme204 = document.getElementsByClassName("close")[5];
+bme204.onclick = function() {
+    mme204.style.display = "block";
+}
+tbme204.onclick = function() {
+    mme204.style.display = "block";
+}
+sme204.onclick = function() {
+    mme204.style.display = "none";
+}
+
+var mme202 = document.getElementById('ME202m');
+var bme202 = document.getElementById("ME202");
+var tbme202 = document.getElementById("TME202");
+var sme202 = document.getElementsByClassName("close")[6];
+bme202.onclick = function() {
+    mme202.style.display = "block";
+}
+tbme202.onclick = function() {
+    mme202.style.display = "block";
+}
+sme202.onclick = function() {
+    mme202.style.display = "none";
+}
+
+var mme212 = document.getElementById('ME212m');
+var bme212 = document.getElementById("ME212");
+var tbme212 = document.getElementById("TME212");
+var sme212 = document.getElementsByClassName("close")[7];
+bme212.onclick = function() {
+    mme212.style.display = "block";
+}
+tbme212.onclick = function() {
+    mme212.style.display = "block";
+}
+sme212.onclick = function() {
+    mme212.style.display = "none";
+}
+
+var mme206 = document.getElementById('ME206m');
+var bme206 = document.getElementById("ME206");
+var tbme206 = document.getElementById("TME206");
+var sme206 = document.getElementsByClassName("close")[8];
+bme206.onclick = function() {
+    mme206.style.display = "block";
+}
+tbme206.onclick = function() {
+    mme206.style.display = "block";
+}
+sme206.onclick = function() {
+    mme206.style.display = "none";
+}
+
+var mme303 = document.getElementById('ME303m');
+var bme303 = document.getElementById("ME303");
+var tbme303 = document.getElementById("TME303");
+var sme303 = document.getElementsByClassName("close")[9];
+bme303.onclick = function() {
+    mme303.style.display = "block";
+}
+tbme303.onclick = function() {
+    mme303.style.display = "block";
+}
+sme303.onclick = function() {
+    mme303.style.display = "none";
+}
+
+var mme305 = document.getElementById('ME305m');
+var bme305 = document.getElementById("ME305");
+var tbme305 = document.getElementById("TME305");
+var sme305 = document.getElementsByClassName("close")[10];
+bme305.onclick = function() {
+    mme305.style.display = "block";
+}
+tbme305.onclick = function() {
+    mme305.style.display = "block";
+}
+sme305.onclick = function() {
+    mme305.style.display = "none";
+}
+
+var mme311 = document.getElementById('ME311m');
+var bme311 = document.getElementById("ME311");
+var tbme311 = document.getElementById("TME311");
+var sme311 = document.getElementsByClassName("close")[11];
+bme311.onclick = function() {
+    mme311.style.display = "block";
+}
+tbme311.onclick = function() {
+    mme311.style.display = "block";
+}
+sme311.onclick = function() {
+    mme311.style.display = "none";
+}
+
+var mme304 = document.getElementById('ME304m');
+var bme304 = document.getElementById("ME304");
+var tbme304 = document.getElementById("TME304");
+var sme304 = document.getElementsByClassName("close")[12];
+bme304.onclick = function() {
+    mme304.style.display = "block";
+}
+tbme304.onclick = function() {
+    mme304.style.display = "block";
+}
+sme304.onclick = function() {
+    mme304.style.display = "none";
+}
+
+var mme312 = document.getElementById('ME312m');
+var bme312 = document.getElementById("ME312");
+var tbme312 = document.getElementById("TME312");
+var sme312 = document.getElementsByClassName("close")[13];
+bme312.onclick = function() {
+    mme312.style.display = "block";
+}
+tbme312.onclick = function() {
+    mme312.style.display = "block";
+}
+sme312.onclick = function() {
+    mme312.style.display = "none";
+}
+
+var mme302 = document.getElementById('ME302m');
+var bme302 = document.getElementById("ME302");
+var tbme302 = document.getElementById("TME302");
+var sme302 = document.getElementsByClassName("close")[14];
+bme302.onclick = function() {
+    mme302.style.display = "block";
+}
+tbme302.onclick = function() {
+    mme302.style.display = "block";
+}
+sme302.onclick = function() {
+    mme302.style.display = "none";
+}
+
+var mme301 = document.getElementById('ME301m');
+var bme301 = document.getElementById("ME301");
+var tbme301 = document.getElementById("TME301");
+var sme301 = document.getElementsByClassName("close")[15];
+bme301.onclick = function() {
+    mme301.style.display = "block";
+}
+tbme301.onclick = function() {
+    mme301.style.display = "block";
+}
+sme301.onclick = function() {
+    mme301.style.display = "none";
+}
+
+var mme314 = document.getElementById('ME314m');
+var bme314 = document.getElementById("ME314");
+var tbme314 = document.getElementById("TME314");
+var sme314 = document.getElementsByClassName("close")[16];
+bme314.onclick = function() {
+    mme314.style.display = "block";
+}
+tbme314.onclick = function() {
+    mme314.style.display = "block";
+}
+sme314.onclick = function() {
+    mme314.style.display = "none";
+}
+
+var mme201 = document.getElementById('ME201m');
+var bme201 = document.getElementById("ME201");
+var tbme201 = document.getElementById("TME201");
+var sme201 = document.getElementsByClassName("close")[17];
+bme201.onclick = function() {
+    mme201.style.display = "block";
+}
+tbme201.onclick = function() {
+    mme201.style.display = "block";
+}
+sme201.onclick = function() {
+    mme201.style.display = "none";
+}
+
+var mme207 = document.getElementById('ME207m');
+var bme207 = document.getElementById("ME207");
+var tbme207 = document.getElementById("TME207");
+var sme207 = document.getElementsByClassName("close")[18];
+bme207.onclick = function() {
+    mme207.style.display = "block";
+}
+tbme207.onclick = function() {
+    mme207.style.display = "block";
+}
+sme207.onclick = function() {
+    mme207.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == mme111) {
+        mme111.style.display = "none";
+	}
+	if (event.target == mme113) {
+        mme113.style.display = "none";
+	}
+	if (event.target == mme203) {
+        mme203.style.display = "none";
+	}
+	if (event.target == mme208) {
+        mme208.style.display = "none";
+	}
+	if (event.target == mme205) {
+        mme205.style.display = "none";
+	}
+	if (event.target == mme204) {
+        mme204.style.display = "none";
+	}
+	if (event.target == mme201) {
+        mme201.style.display = "none";
+	}
+	if (event.target == mme202) {
+        mme202.style.display = "none";
+	}
+	if (event.target == mme212) {
+        mme212.style.display = "none";
+	}
+	if (event.target == mme206) {
+        mme206.style.display = "none";
+	}
+	if (event.target == mme303) {
+        mme303.style.display = "none";
+	}
+	if (event.target == mme305) {
+        mme305.style.display = "none";
+	}
+	if (event.target == mme311) {
+        mme311.style.display = "none";
+	}
+	if (event.target == mme304) {
+        mme304.style.display = "none";
+	}
+	if (event.target == mme312) {
+        mme312.style.display = "none";
+	}
+	if (event.target == mme302) {
+        mme302.style.display = "none";
+	}
+	if (event.target == mme301) {
+        mme301.style.display = "none";
+	}
+	if (event.target == mme314) {
+        mme314.style.display = "none";
+	}
+	if (event.target == mme207) {
+        mme207.style.display = "none";
+	}
+}
+</script>    
+</body>
+</html>

@@ -1,0 +1,2474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>EE</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width="device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="menustyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Asar' rel='stylesheet'>
+    <!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+
+    <style type="text/css">
+        
+    
+
+  body{
+      background-color: #9CFFA3 ;
+    }
+
+  #heading
+        {
+          width: 100%;
+          margin: auto;
+          color: white;
+          height: 200px;
+          /*background-image: linear-gradient(to right, #0086C6, #42C2FF) ;*/
+          background-color: #089111;
+          /*margin-left: 20px;*/
+          size: 30px;
+          font-size: 50px;
+          font-family: "Caudex";
+          text-align: left;
+          vertical-align: middle;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          /*border: 5px solid darkblue;*/
+        }
+  }
+
+
+.modaltable table {
+font-family: arial, sans-serif;
+font-size:  35px;
+width: 100%;
+}
+
+.modaltable td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size:  20px;
+}
+
+.modaltable tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.arrow{
+  stroke:rgb(0,0,0);
+  marker-end:url(#markerArrow)
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    text-align: left;
+}	
+</style>
+</head>
+
+
+<script type="text/javascript">
+var mainlist = []
+var ee102 = []
+ee102.push("EE102")
+ee102.push("MA101")
+mainlist.push(ee102)
+
+var ee101 = []
+ee101.push("EE101")
+mainlist.push(ee101)
+
+var ee203 = []
+ee203.push("EE203")
+ee203.push("EE102")
+mainlist.push(ee203)
+
+var ee205 = []
+ee205.push("EE205")
+mainlist.push(ee205)
+
+var ee207 = []
+ee207.push("EE207")
+mainlist.push(ee207)
+
+var ee206 = []
+ee206.push("EE206")
+ee206.push("EE101")
+mainlist.push(ee206)
+
+var ph102 = []
+ph102.push("PH102")
+ph102.push("MA101")
+mainlist.push(ph102)
+
+var ee201 = []
+ee201.push("EE201")
+mainlist.push(ee201)
+
+var ma101 = []
+ma101.push("MA101")
+mainlist.push(ma101)
+
+var ma202 = []
+ma202.push("MA202")
+ma202.push("MA101")
+ma202.push("MA102")
+ma202.push("MA104")
+mainlist.push(ma202)
+
+var ma104 = []
+ma104.push("MA104")
+ma104.push("MA101")
+mainlist.push(ma104)
+
+var ma102 = []
+ma102.push("MA102")
+mainlist.push(ma102)
+
+var ee210 = []
+ee210.push("EE210")
+ee210.push("MA101")
+mainlist.push(ee210)
+
+var ee208 = []
+ee208.push("EE208")
+ee208.push("MA101")
+mainlist.push(ee208)
+
+var ee202 = []
+ee202.push("EE202")
+ee202.push("EE201")
+ee202.push("EE101")
+mainlist.push(ee202)
+
+var ee204 = []
+ee204.push("EE204")
+mainlist.push(ee204)
+
+var ee212 = []
+ee212.push("EE212")
+mainlist.push(ee212)
+
+var ee311 = []
+ee311.push("EE311")
+mainlist.push(ee311)
+
+var ee307 = []
+ee307.push("EE307")
+ee307.push("MA101")
+mainlist.push(ee307)
+
+var ee302 = []
+ee302.push("EE302")
+mainlist.push(ee302)
+
+var ee314 = []
+ee314.push("EE314")
+ee314.push("EE305")
+mainlist.push(ee314)
+
+var ee305 = []
+ee305.push("EE305")
+mainlist.push(ee305)
+
+var ee303 = []
+ee303.push("EE303")
+ee303.push("MA102")
+mainlist.push(ee303)
+
+var ee312 = []
+ee312.push("EE312")
+ee312.push("EE303")
+mainlist.push(ee312)
+
+var ee316 = []
+ee316.push("EE316")
+ee316.push("EE314")
+ee316.push("EE302")
+ee316.push("EE204")
+ee316.push("EE101")
+ee316.push("EE206")
+ee316.push("EE201")
+ee316.push("EE303")
+ee316.push("EE312")
+ee316.push("EE212")
+ee316.push("EE203")
+ee316.push("EE102")
+ee316.push("EE210")
+ee316.push("EE202")
+ee316.push("EE205")
+ee316.push("EE207")
+ee316.push("EE208")
+ee316.push("EE307")
+ee316.push("EE305")
+mainlist.push(ee316)
+function eespecial(give)
+{
+    document.getElementById(give).setAttribute("fill","#03FF15")
+    document.getElementById(give).setAttribute("r","55")
+    var index = 0
+    for(var i=0;i<mainlist.length;i++)
+    {
+        var temp = mainlist[i];
+        if(temp[0] == give)
+        {
+            index = i;
+            break;
+        }
+    }
+    var cars = mainlist[index];
+    for(var a=1;a<cars.length;a++)
+    {
+        //var lineid = cars[0] + "to" + cars[a];
+        //document.getElementById(lineid).setAttribute("stroke-width","2")
+        document.getElementById(cars[a]).setAttribute("fill","#03FF15")
+        document.getElementById(cars[a]).setAttribute("r","55")
+        //joinnodes(cars[a]);
+    }
+}
+function teespecial(give1)
+{
+    give = give1[1] + give1[2] + give1[3] + give1[4] + give1[5]
+    document.getElementById(give).setAttribute("fill","#03FF15")
+    document.getElementById(give).setAttribute("r","55")
+    var index = 0
+    for(var i=0;i<mainlist.length;i++)
+    {
+        var temp = mainlist[i];
+        if(temp[0] == give)
+        {
+            index = i;
+            break;
+        }
+    }
+    var cars = mainlist[index];
+    for(var a=1;a<cars.length;a++)
+    {
+        //var lineid = cars[0] + "to" + cars[a];
+        //document.getElementById(lineid).setAttribute("stroke-width","2")
+        document.getElementById(cars[a]).setAttribute("fill","#03FF15")
+        document.getElementById(cars[a]).setAttribute("r","55")
+        //joinnodes(cars[a]);
+    }
+}
+function reespcial(give)
+{
+    document.getElementById(give).setAttribute("fill","#007B09")
+    document.getElementById(give).setAttribute("r","50")
+    var index = 0
+    for(var i=0;i<mainlist.length;i++)
+    {
+        var temp = mainlist[i];
+        if(temp[0] == give)
+        {
+            index = i;
+            break;
+        }
+    }
+    var cars = mainlist[index];
+    for(var a=1;a<cars.length;a++)
+    {
+        //var lineid = cars[0] + "to" + cars[a];
+        //document.getElementById(lineid).setAttribute("stroke-width","0")
+        document.getElementById(cars[a]).setAttribute("fill","#007B09")
+        document.getElementById(give).setAttribute("r","50")
+        //removenodes(cars[a]);
+    }
+}
+function treespecial(give1)
+{
+    give = give1[1] + give1[2] + give1[3] + give1[4] + give1[5]
+    document.getElementById(give).setAttribute("fill","#007B09")
+    document.getElementById(give).setAttribute("r","50")
+    var index = 0
+    for(var i=0;i<mainlist.length;i++)
+    {
+        var temp = mainlist[i];
+        if(temp[0] == give)
+        {
+            index = i;
+            break;
+        }
+    }
+    var cars = mainlist[index];
+    for(var a=1;a<cars.length;a++)
+    {
+        //var lineid = cars[0] + "to" + cars[a];
+        //document.getElementById(lineid).setAttribute("stroke-width","0")
+        document.getElementById(cars[a]).setAttribute("fill","#007B09")
+        document.getElementById(give).setAttribute("r","50")
+        //removenodes(cars[a]);
+    }
+}
+
+function joinnodes(give)
+{
+    document.getElementById(give).setAttribute("fill","#03FF15")
+    document.getElementById(give).setAttribute("r", "55")
+
+    var index = 0
+    for(var i=0;i<mainlist.length;i++)
+    {
+        var temp = mainlist[i];
+        if(temp[0] == give)
+        {
+            index = i;
+            break;
+        }
+    }
+    var cars = mainlist[index];
+    for(var a=1;a<cars.length;a++)
+    {
+        var lineid = cars[0] + "to" + cars[a];
+        document.getElementById(lineid).setAttribute("stroke-width","2")
+        document.getElementById(cars[a]).setAttribute("fill","#03FF15")
+        document.getElementById(give).setAttribute("r", "55")
+        joinnodes(cars[a]);
+    }
+}
+function tjoinnodes(give1)
+{
+    give = give1[1] + give1[2] + give1[3] + give1[4] + give1[5]
+    document.getElementById(give).setAttribute("fill","#03FF15")
+    document.getElementById(give).setAttribute("r", "55")
+    var index = 0
+    for(var i=0;i<mainlist.length;i++)
+    {
+        var temp = mainlist[i];
+        if(temp[0] == give)
+        {
+            index = i;
+            break;
+        }
+    }
+    var cars = mainlist[index];
+    for(var a=1;a<cars.length;a++)
+    {
+        var lineid = cars[0] + "to" + cars[a];
+        document.getElementById(lineid).setAttribute("stroke-width","2")
+        document.getElementById(cars[a]).setAttribute("fill","#03FF15")
+        document.getElementById(give).setAttribute("r", "55")
+        joinnodes(cars[a]);
+    }
+}
+function removenodes(give)
+{
+    document.getElementById(give).setAttribute("fill","#007B09")
+    document.getElementById(give).setAttribute("r", "50")
+    var index = 0
+    for(var i=0;i<mainlist.length;i++)
+    {
+        var temp = mainlist[i];
+        if(temp[0] == give)
+        {
+            index = i;
+            break;
+        }
+    }
+    var cars = mainlist[index];
+    for(var a=1;a<cars.length;a++)
+    {
+        var lineid = cars[0] + "to" + cars[a];
+        document.getElementById(lineid).setAttribute("stroke-width","0")
+        document.getElementById(cars[a]).setAttribute("fill","#007B09")
+        document.getElementById(give).setAttribute("r", "50")
+        removenodes(cars[a]);
+    }
+}
+function tremovenodes(give1)
+{
+    give = give1[1] + give1[2] + give1[3] + give1[4] + give1[5]
+    document.getElementById(give).setAttribute("fill","#007B09")
+    document.getElementById(give).setAttribute("r", "50")
+    var index = 0
+    for(var i=0;i<mainlist.length;i++)
+    {
+        var temp = mainlist[i];
+        if(temp[0] == give)
+        {
+            index = i;
+            break;
+        }
+    }
+    var cars = mainlist[index];
+    for(var a=1;a<cars.length;a++)
+    {
+        var lineid = cars[0] + "to" + cars[a];
+        document.getElementById(lineid).setAttribute("stroke-width","0")
+        document.getElementById(cars[a]).setAttribute("fill","#007B09")
+        document.getElementById(give).setAttribute("r", "50")
+        removenodes(cars[a]);
+    }
+}
+console.log()
+</script>
+
+<body id="cds">
+
+<div id="heading">
+    <img src="logo_white.png" width="200px" height="160px">
+    Course Database and Spines    
+</div>
+
+<br>
+<br>
+<div class="container">
+   <p align="center"> 
+  <button type="button"  class="button2" data-toggle="collapse" data-target="#demo"><span>Select a Branch </span></button>  
+    </p> 
+    
+  <div id="demo" class="collapse">
+    
+    
+    <br>
+
+
+    <center><div class="csebox">
+      <button type="button" class="button1" onclick="window.open('realcse.html', '_self')">Computer Science & Engineering</button>
+    </div>
+  </center>
+    <br>
+    <center>
+    <div class="eebox">
+      <button type="button" class="button3" onclick="window.open('realee.html', '_self')">Electrical Engineering</button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="mechbox">
+      <button type="button" class="button4" onclick="window.open('realmec.html', '_self')">Mechanical Engineering </button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="othbox">
+      <button type="button" class="button5" onclick="window.open('othercourses.html', '_self')">Other Courses</button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="othbox">
+      <button type="button" class="button6" onclick="window.open('electives.html', '_self')">Electives</button>
+    </div>
+    </center>
+</center> 
+  </center>
+
+  </div>
+</div>
+</div>
+
+<center><h4><b>Note:</b> For the Course EE316, every course in the Electrical Engineering Dept. taught till 5th Semester is a prerequisite. To enhance readability, the connections for EE316 are not shown.</h4></center>
+
+
+<center>    
+<svg height="1000" width="1200">
+<defs>
+    <marker id="markerArrow" markerWidth="50" markerHeight="50" refX="60" refY="6" orient="auto">
+    <path d="M2,2 L2,11 L10,6 L2,2" style="fill: orange;" />
+    </marker> 
+</defs>
+
+<line id="EE102toMA101" stroke-width="0" style="stroke:red;" x2="250" y2="100" x1="550" y1="300" class="arrow" />
+
+<line id="EE203toEE102" stroke-width="0" style="stroke:red;" x2="100" y2="200" x1="250" y1="100" class="arrow" />
+
+<line id="EE202toEE101" stroke-width="0" style="stroke:red;" x2="650" y2="100" x1="320" y1="300" class="arrow" />
+
+<line id="PH102toMA101" stroke-width="0" style="stroke:red;" x2="850" y2="100" x1="550" y1="300" class="arrow" />
+
+<line id="MA202toMA101" stroke-width="0" style="stroke:red;" x2="750" y2="300" x1="550" y1="300" class="arrow" />
+
+<line id="EE210toMA101" stroke-width="0" style="stroke:red;" x2="450" y2="100" x1="550" y1="300" class="arrow" />
+
+<line id="EE206toEE101" stroke-width="0" style="stroke:red;" x2="130" y2="350" x1="320" y1="300" class="arrow" />
+
+<line id="MA202toMA102" stroke-width="0" style="stroke:red;" x1="750" y1="300" x2="950" y2="300" class="arrow" />
+
+<line id="EE303toMA102" stroke-width="0" style="stroke:red;" x2="650" y2="500" x1="950" y1="300" class="arrow" />
+
+<line id="EE202toEE201" stroke-width="0" style="stroke:red;" x2="650" y2="100" x1="150" y1="500" class="arrow" />
+
+<line id="EE314toEE305" stroke-width="0" style="stroke:red;" x1="400" y1="750" x2="550" y2="650" class="arrow" />
+
+<line id="EE312toEE303" stroke-width="0" style="stroke:red;" x1="650" y1="500" x2="750" y2="650" class="arrow" />
+
+<line id="MA202toMA104" stroke-width="0" style="stroke:red;" x2="1050" y2="500" x1="750" y1="300" class="arrow" />
+
+<line id="EE307toMA101" stroke-width="0" style="stroke:red;" x1="550" y1="300" x2="100" y2="670" class="arrow" />
+
+<line id="EE208toMA101" stroke-width="0" style="stroke:red;" x1="550" y1="300" x2="850" y2="500" class="arrow" />
+
+<line id="MA104toMA101" stroke-width="0" style="stroke:red;" x2="550" y2="300" x1="1050" y1="500" class="arrow" />
+
+<!--<line id="EE316toEE212" stroke-width="0" style="stroke:red;" x2="430" y2="500" x1="500" y1="830" class="arrow" />
+
+<line id="EE316toEE314" stroke-width="0" style="stroke:red;" x2="430" y2="500" x1="550" y1="650" class="arrow" />
+
+<line id="EE316toEE302" stroke-width="0" style="stroke:red;" x2="430" y2="500" x1="250" y1="620" class="arrow" />
+
+<line id="EE316toEE204" stroke-width="0" style="stroke:red;" x2="430" y2="500" x1="250" y1="830" class="arrow" />
+
+<line id="EE316toEE101" stroke-width="0" style="stroke:red;" x2="430" y2="500" x1="320" y1="300" class="arrow" />
+
+<line id="EE316toEE206" stroke-width="0" style="stroke:red;" x2="430" y2="500" x1="130" y1="350" class="arrow" />
+
+<line id="EE316toEE201" stroke-width="0" style="stroke:red;" x2="430" y2="500" x1="150" y1="500" class="arrow" />
+
+<line id="EE316toEE303" stroke-width="0" style="stroke:red;" x2="430" y2="500" x1="650" y1="500" class="arrow" />
+
+<line id="EE316toEE312" stroke-width="0" style="stroke:red;" x2="430" y2="500" x1="750" y1="650" class="arrow" />-->
+
+<circle onmouseover="joinnodes('EE102')" onmouseleave="removenodes('EE102')" id="EE102" cx="250" cy="100" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE102" onmouseover="tjoinnodes('TEE102')" onmouseleave="tremovenodes('TEE102')" x="250" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE102 </text>
+
+<circle onmouseover="joinnodes('EE210')" onmouseleave="removenodes('EE210')" id="EE210" cx="450" cy="100" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE210" onmouseover="tjoinnodes('TEE210')" onmouseleave="tremovenodes('TEE210')" x="450" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE210 </text>
+
+<circle onmouseover="joinnodes('EE206')" onmouseleave="removenodes('EE206')" id="EE206" cx="130" cy="350" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE206" onmouseover="tjoinnodes('TEE206')" onmouseleave="tremovenodes('TEE206')" x="130" y="350" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE206 </text>
+
+<circle onmouseover="joinnodes('PH102')" onmouseleave="removenodes('PH102')" id="PH102" cx="850" cy="100" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TPH102" onmouseover="tjoinnodes('TPH102')" onmouseleave="tremovenodes('TPH102')" x="850" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> PH102 </text>
+
+<circle onmouseover="joinnodes('MA101')" onmouseleave="removenodes('MA101')" id="MA101" cx="550" cy="300" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TMA101" onmouseover="tjoinnodes('TMA101')" onmouseleave="tremovenodes('TMA101')" x="550" y="300" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> MA101 </text>
+
+<circle onmouseover="joinnodes('MA202')" onmouseleave="removenodes('MA202')" id="MA202" cx="750" cy="300" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TMA202" onmouseover="tjoinnodes('TMA202')" onmouseleave="tremovenodes('TMA202')" x="750" y="300" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> MA202 </text>
+
+<circle onmouseover="joinnodes('EE203')" onmouseleave="removenodes('EE203')" id="EE203" cx="100" cy="200" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE203" onmouseover="tjoinnodes('TEE203')" onmouseleave="tremovenodes('TEE203')" x="100" y="200" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE203 </text>
+
+<circle onmouseover="joinnodes('MA102')" onmouseleave="removenodes('MA102')" id="MA102" cx="950" cy="300" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TMA102" onmouseover="tjoinnodes('TMA102')" onmouseleave="tremovenodes('TMA102')" x="950" y="300" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> MA102 </text>
+
+<circle onmouseover="joinnodes('EE207')" onmouseleave="removenodes('EE207')" id="EE207" cx="1150" cy="300" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE207" onmouseover="tjoinnodes('TEE207')" onmouseleave="tremovenodes('TEE207')" x="1150" y="300" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE207 </text>
+
+<circle onmouseover="joinnodes('MA104')" onmouseleave="removenodes('MA104')" id="MA104" cx="1050" cy="500" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TMA104" onmouseover="tjoinnodes('TMA104')" onmouseleave="tremovenodes('TMA104')" x="1050" y="500" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> MA104 </text>
+
+<circle onmouseover="joinnodes('EE208')" onmouseleave="removenodes('EE208')" id="EE208" cx="850" cy="500" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE208" onmouseover="tjoinnodes('TEE208')" onmouseleave="tremovenodes('TEE208')" x="850" y="500" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE208 </text>
+
+<circle onmouseover="joinnodes('EE101')" onmouseleave="removenodes('EE101')" id="EE101" cx="320" cy="300" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE101" onmouseover="tjoinnodes('TEE101')" onmouseleave="tremovenodes('TEE101')" x="320" y="300" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE101 </text>
+
+<circle onmouseover="joinnodes('EE202')" onmouseleave="removenodes('EE202')" id="EE202" cx="650" cy="100" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE202" onmouseover="tjoinnodes('TEE202')" onmouseleave="tremovenodes('TEE202')" x="650" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE202 </text>
+
+<circle onmouseover="eespecial('EE316')" onmouseleave="reespcial('EE316')" id="EE316" cx="430" cy="500" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE316" onmouseover="teespecial('TEE316')" onmouseleave="treespecial('TEE316')" x="430" y="500" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE316 </text>
+
+<circle onmouseover="joinnodes('EE201')" onmouseleave="removenodes('EE201')" id="EE201" cx="150" cy="500" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE201" onmouseover="tjoinnodes('TEE201')" onmouseleave="tremovenodes('TEE201')" x="150" y="500" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE201 </text>
+
+<circle onmouseover="joinnodes('EE303')" onmouseleave="removenodes('EE303')" id="EE303" cx="650" cy="500" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE303" onmouseover="tjoinnodes('TEE303')" onmouseleave="tremovenodes('TEE303')" x="650" y="500" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE303 </text>
+
+<circle onmouseover="joinnodes('EE312')" onmouseleave="removenodes('EE312')" id="EE312" cx="750" cy="650" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE312" onmouseover="tjoinnodes('TEE312')" onmouseleave="tremovenodes('TEE312')" x="750" y="650" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE312 </text>
+
+<circle onmouseover="joinnodes('EE314')" onmouseleave="removenodes('EE314')" id="EE314" cx="550" cy="650" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE314" onmouseover="tjoinnodes('TEE314')" onmouseleave="tremovenodes('TEE314')" x="550" y="650" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE314 </text>
+
+<circle onmouseover="joinnodes('EE305')" onmouseleave="removenodes('EE305')" id="EE305" cx="400" cy="750" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE305" onmouseover="tjoinnodes('TEE305')" onmouseleave="tremovenodes('TEE305')" x="400" y="750" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE305 </text>
+
+<circle onmouseover="joinnodes('EE302')" onmouseleave="removenodes('EE302')" id="EE302" cx="250" cy="620" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE302" onmouseover="tjoinnodes('TEE302')" onmouseleave="tremovenodes('TEE302')" x="250" y="620" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE302 </text>
+
+<circle onmouseover="joinnodes('EE307')" onmouseleave="removenodes('EE307')" id="EE307" cx="100" cy="670" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE307" onmouseover="tjoinnodes('TEE307')" onmouseleave="tremovenodes('TEE307')" x="100" y="670" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE307 </text>
+
+<circle onmouseover="joinnodes('EE204')" onmouseleave="removenodes('EE204')" id="EE204" cx="250" cy="830" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE204" onmouseover="tjoinnodes('TEE204')" onmouseleave="tremovenodes('TEE204')" x="250" y="830" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE204 </text>
+
+<circle onmouseover="joinnodes('EE212')" onmouseleave="removenodes('EE212')" id="EE212" cx="500" cy="830" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE212" onmouseover="tjoinnodes('TEE212')" onmouseleave="tremovenodes('TEE212')" x="500" y="830" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE212 </text>
+
+<circle onmouseover="joinnodes('EE311')" onmouseleave="removenodes('EE311')" id="EE311" cx="950" cy="650" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE311" onmouseover="tjoinnodes('TEE311')" onmouseleave="tremovenodes('TEE311')" x="950" y="650" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE311 </text>
+
+<circle onmouseover="joinnodes('EE205')" onmouseleave="removenodes('EE205')" id="EE205" cx="1050" cy="100" r="50" stroke="black" stroke-width="0"  fill="#007B09" />
+<text id="TEE205" onmouseover="tjoinnodes('TEE205')" onmouseleave="tremovenodes('TEE205')" x="1050" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Asar" font-size="25" fill="white"> EE205 </text>
+
+</svg>
+</center>
+
+<div id="EE102m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE102: Introduction to Electrical Systems and Electronics</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-0-1-7</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>From Physics to Electrical Engineering
+(a) Lumped matter discipline
+(b) Batteries, resistors, current sources and basic laws
+(c) I-V characteristics and modeling physical systems
+Basic Circuit Analysis Methods
+(a) KCL and KVL, voltage and current dividers
+(b) Parallel and serial resistive circuits
+(c) More complicated circuits
+(d) Dependent sources, and the node method
+(e) Superposition principle
+(f) Thevenin and Norton method of solving linear circuits
+(g) Circuits involving diode.
+Analysis of Non-linear Circuits
+(a) Toy example of non-linear circuit and its analysis
+(b) Incremental analysis
+(c) Introduction to MOSFET Amplifiers
+(d) Large and small signal analysis of MOSFETs
+(e) MOSFET as a switch
+Introduction to the Digital World
+(a) Voltage level and static discipline
+(b) Boolean logic and combinational gates
+(c) MOSFET devices and the S Model
+(d) MOSFET as a switch; revisited
+(e) The SR model of MOSFETs
+(f) Non-linearities: A snapshot
+Capacitors and Inductors
+(a) Behavior of capacitors, inductors and its linearity
+(b) Basic RC and RLC circuits
+(c) Modeling MOSFET anomalies using capacitors
+(d) RLC circuit and its analysis
+6
+(e) Sinusoidal steady state analysis
+(f) Introduction to passive filters
+Operational Amplifier Abstraction
+(a) Introduction to Operational Amplifier
+(b) Analysis of Operational amplifier circuits
+(c) Op-Amp as active filters
+(d) Introduction to active filter design
+Transformers and Motors
+(a) AC Power circuit analysis
+(b) Polyphase circuits
+(c) Introduction to transformers
+(d) Introduction to motors</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: </h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE210m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 210 Probability and Random Process</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>Introduction: Motivation for studying the course,
+revision of basic math required, connection
+between probability and length on subsets of real
+line, probability-formal definition, events and σalgebra,
+combinatorial problems, independence of
+events, and conditional probability, applications of
+conditional probability in statistics.
+Random Variables: Definition of random
+variables, and types of random variables, CDF,
+PDF and its properties, joint CDF and PDF,
+random vectors and independence, brief
+introduction to transformation of random variables,
+introduction to Gaussian random vectors.
+Mathematical Expectation: Importance of
+averages through examples, definition of
+expectation, moments and conditional expectation,
+use of MGF, PGF and characteristic functions,
+variance and k-th moment, conditional expectation
+and its applications in signal processing,
+correlation.
+Inequalities and Notions of convergence:
+Markov, Chebychev, Chernoff and Mcdiarmid
+inequalities, convergence in probability, mean, and
+almost sure and central limit theorem.
+Application problems: Statistical signal
+processing, random graphs and percolation,
+hypothesis testing.
+Random Process: Example and formal definition,
+stationarity, autocorrelation, and cross correlation
+function, ergodicity, brief introduction to KL
+expansion, introduction to Poisson random process
+and Markov chains.
+Markov Chain: Communication classes and its
+properties, stationary distribution and its existence, 
+27
+example applications of Markov Decision Process
+(MDP).</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: Exposure to Basic Calculus</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE202m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 202 Analog Circuits</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>• BJT and MOSFET based amplifiers: Cascaded
+amplifiers.
+• Introduction to operational amplifiers: The
+difference amplifier and the ideal operational
+amplifier models, concept of negative feedback
+and virtual short, Analysis of simple operational
+amplifier circuits,
+• Frequency response of amplifiers, Bode plots.
+• Feedback: Feedback topologies and analysis for
+discrete transistor amplifiers, stability of feedback
+circuits using Barkhausen criteria.
+• Linear applications of operational amplifiers:
+Instrumentation and Isolation amplifiers, Current
+and voltage sources, Active filters.
+• Non-linear applications of operational amplifiers:
+Comparators, clippers and clampers,
+Linearization amplifiers; Precision rectifiers,
+Logarithmic amplifiers, multifunction circuits and
+true rms convertors.
+• Waveform Generation: sinusoidal feedback
+oscillators, Relaxation oscillators, square-triangle
+oscillators
+• Real operational amplifiers: Current sources and
+active loads, difference, intermediate and output
+stages including Miller capacitors for frequency
+computation,
+• Operational amplifier parameters; Effects of real
+operational amplifier parameters on circuit
+performance.
+• Analog and Digital interface circuits: A/D, D/A
+Converters, S/H circuits and multiplexers.</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: Exposure to EE101, EE201</h2>
+    </div>
+  </div>
+</div>
+
+<div id="PH102m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>PH102 Electricity and Magnetism</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td> Review of vector calculus: Spherical polar and
+cylindrical coordinates; gradient, divergence and
+curl;
+ Divergence and Stokes` theorems;
+ Divergence and curl of electric field, Electric
+potential, properties of conductors;
+ Poisson’s and Laplace’s equations, uniqueness
+theorems, boundary value problems, separation of
+variables, method of images, multipoles;
+ Polarization and bound charges, Gauss` law in the
+presence of dielectrics, Electric displacement D
+and boundary conditions, linear dielectrics;
+ Divergence and curl of magnetic field, Vector
+potential and its applications;
+ Magnetization, bound currents, Ampere`s law in
+magnetic materials, Magnetic field H, boundary
+conditions, classification of magnetic materials;
+ Faraday’s law in integral and differential forms,
+Motional emf, Energy in magnetic fields,
+Displacement current, Maxwell’s equations,
+ Electromagnetic (EM) waves in vacuum and
+media, Energy and momentum of EM waves,
+Poynting`s theorem;
+ Reflection and transmission of EM waves across
+linear media.</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE205m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE205 Network Theory</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>•   Graphs of networks: current and voltage spaces of graphs and their representations: incidence, cutset and circuit matrices; Tellegen's Theorem. 
+•   Formal study of methods of analysis such as nodal, modified nodal, cutset, loop analysis for linear networks. 
+•   Multiport representation for networks with particular emphasis on 2-ports. 
+•   Time domain analysis of R, L, M, C, controlled sources, networks using state space methods. 
+•   Introduction to s-domain methods.
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE203m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 203: Electronic Devices and Circuits</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-0-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>•   Graphs of networks: current and voltage spaces of graphs and their representations: incidence, cutset and circuit matrices; Tellegen's Theorem. 
+•   Formal study of methods of analysis such as nodal, modified nodal, cutset, loop analysis for linear networks. 
+•   Multiport representation for networks with particular emphasis on 2-ports. 
+•   Time domain analysis of R, L, M, C, controlled sources, networks using state space methods. 
+•   Introduction to s-domain methods.
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE101m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 101: Electronic Devices and Circuits</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-0-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>•   Modeling devices: Static characteristics of ideal two terminals and three terminal devices; Small signal models of non-linear devices.
+•   Introduction to semiconductor equations and carrier statistics: Poisson's and continuity equations, Fermi-Dirac statistics and Boltzmann approximation to the Fermi-Dirac statistics.
+•   Semiconductor Diodes: Barrier formation in metal-semiconductor junctions, PN homo- and hetero- junctions; CV characteristics and dopant profiling; IV characteristics; Small signal models of diodes; Some Applications of diodes. 
+•   Field Effect Devices: JFET/HFET, MIS structures and MOSFET operation; JFET characteristics and small signal models; MOS capacitor CV and concept of accumulation, depletion and inversion; MOSFET characteristics and small signal models. 
+•   Bipolar transistors: IV characteristics and Elers-Moll model; small signal models; Charge storage and transient response. 
+•   Discrete transistor amplifiers: Common emitter and common source amplifiers; Emitter and source followers.
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="MA101m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>MA 101 Calculus</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-1-0-8</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>Review of limits, continuity, differentiability. Mean value theorem, Taylors Theorem, Maxima and Minima. Riemann integrals, Fundamental theorem of Calculus, Improper integrals, applications to area, volume. Convergence of sequences and series, power series. Partial Derivatives, gradient and directional derivatives, chain rule, maxima and minima, Lagrange multipliers. Double and Triple integration, Jacobians and change of variables formula. Parametrization of curves and surfaces, vector fields, line and surface integrals. Divergence and curl, Theorems of Green, Gauss, and Stokes.
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="MA202m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>MA 202 Introduction to Numerical Analysis</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-1-0-8</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course for CSE and ME</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>Interpolation by polynomials, divided differences,
+error of the interpolating polynomial, piecewise
+linear and cubic spline interpolation. Numerical
+integration, composite rules, error formulae. Solution
+of a system of linear equations, implementation of
+Gaussian elimination and Gauss-seidel methods,
+partial pivoting, row echelon form, LU factorization
+Cholesky's method, ill-conditioning, norms. Solution
+of a nonlinear equation, bisection andsecant methods.
+Newton's method, rate of convergence, solution of a
+system of nonlinear equations, numerical solution of
+ordinary differential equations, Euler and RungeKutta
+methods, multi-step methods, predictorcorrector
+methods, order of convergence, nite
+dierence methods, numerical solutions of elliptic,
+parabolic, and hyperbolic partial differential
+equations. Eigenvalue problem, power method, QR
+method, Gershgorin's theorem
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: MA101, MA102, MA104.</h2>
+    </div>
+  </div>
+</div>
+
+<div id="MA102m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>MA 102 Linear Algebra</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-1-0-4</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Half</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>Vectors in R^n
+, notion of linear independence and
+dependence, linear span of a set of vectors, vector
+subspaces of Rn
+, basis of a vector subspace. Systems of
+linear equations, matrices and Gauss elimination, row
+space, null space, and column space, rank of a matrix.
+Determinants and rank of a matrix in terms of
+determinants. Abstract vector spaces, linear
+transformations, matrix of a linear transformation,
+change of basis and similarity, rank-nullity theorem.
+Inner product spaces, Gram-Schmidt process,
+orthonormal bases, projections and least squares
+approximation. Eigenvalues and eigenvectors,
+characteristic polynomials, eigenvalues of special
+matrices (orthogonal, unitary, hermitian, symmetric,
+skew-symmetric, normal). Algebraic and geometric
+multiplicity, diagonalization by similarity
+transformations, spectral theorem for real symmetric
+matrices, application to quadratic forms.
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE207m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 207: Signals and Systems</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>•   Continuous-time and Discrete-time signal (and system) classification and properties. 
+•   Impulse response, LTI / LSI system and properties; Continuous-time and Discrete-time convolution.
+•   Linear constant coefficient differential (and difference) equations. 
+•   Continuous – time Fourier series and Continuous – time Fourier Transform.  Their Properties. 
+•   Discrete – time Fourier series and Discrete – time Fourier Transform. Their Properties.
+•   Sampling and Aliasing in time and frequency. Discrete Fourier Transform.
+•   Laplace Transform and its Properties.
+•   Z-Transform and its Properties.
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE206m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 206 Electrical Machines and Power Electronics</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>• Review of principles of operation of dc, induction
+and synchronous machines.
+• Operating Characteristics of dc and ac machines,
+Speed control of dc and induction motors.
+• Operating characteristics of power semi-conductor
+devices,
+• principle of operation of single and three phase acdc
+line commutated converters,
+• introduction to unity power factor converters.
+• Principle of operation dc-dc (buck, boost, buckboost,
+cuk, fly-back and forward) converters.
+• Principle of operation single phase and three phase
+dcac converters, PWM techniques.
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: Exposure to EE 101</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE201m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 201 Data Analysis</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-0-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>The role of statistics. Graphical and numerical methods for describing and summarising data. Probability. Population distributions. Sampling variability and sampling distributions. Estimation using a single sample. Hypothesis testing a single sample. Comparing two populations or treatments. Simple linear regression and correlation. Case studies.
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE316m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 316 Electronic Design Lab</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>1-0-4-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>This is project-based course in which students will do
+embedded systems project applying the concepts of core
+EE courses. 
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: All Courses in EE till 5th Semester.</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE303m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 303: Control Systems</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-0-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>●   Basic concepts: Notion of feedback, open- and closed-loop systems. 
+●   Modeling and representations of control systems: Transfer function models of for suitable mechanical, electrical, thermal and pneumatic systems, Ordinary differential equations, Transfer functions, Block diagrams, Signal flow graphs, State-space representations. 
+●   Control hardware and their models: Potentiometers, synchros, LVDT, DC and AC servo motors, tachogenerators, electro-hydraulic valves, pneumatic actuators.
+●   Performance and stability: Time-domain analysis, Second-order systems, Characteristic-equation and roots, Routh-Hurwitz criteria. 
+●   Basic modes of feedback control: Proportional, Integral, Derivative.
+●   Root locus method of design.
+●   Frequency-domain techniques: Root-locus methods, Frequency responses, Bode-plots, Gain-margin and phase-margin, Nyquist plots.
+●   Compensator design: Proportional, PI and PID controllers, Lead-lag compensators. 
+●   State-space concepts: Controllability, Observability, pole placement result, Minimal representations.
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: Exposure to Linear Algebra.</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE208m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 208 Engineering Electromagnetics</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>Overview of Static Electric and Magnetic Fields,
+Steady Electric Currents;
+• Time Varying Electromagnetic Fields, Maxwell’s
+Equations, Boundary Conditions;
+• Plane Electromagnetic Waves, Propagation in Free
+Space and in Matter;
+• Reflection and Refraction of Waves at Conducting
+and Dielectric Boundary;
+• Transmission Lines: TEM waves, Transmission
+Line Equations, Wave Propagation along Finite
+Transmission Lines, Transients on Lines, The
+Smith Chart;
+• Waveguides, Waves in Guided Media, Parallel
+Plate Waveguide, Rectangular Wave guide, Cavity
+Resonators;
+• Basic Theory of Antennas and Radiation
+Characteristics, Elementary Types of Antennas.
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: Exposure to Basic Calculus.</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE307m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 307 Probability and Random Process</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-0-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course for EE and CS electives</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>     Introduction: Motivation for studying the course, revision of basic math required, connection between probability and length on subsets of real line, probability-formal definition, events and sigma-algebra, independence of events, and conditional probability, sequence of events, and Borel-Cantell Lemma.  
+    Random Variables: Definition of random variables, and types of random variables, CDF, PDF and its properties, examples of random variables, random vectors and independence, brief introduction to transformation of random variables, introduction to Gaussian random vectors
+Mathematical Expectation: Importance of averages through examples, definition of expectation, moments and conditional expectation, use of MGF, PGF and characteristic functions, variance and k-th moment.
+Inequalities and Notions of convergence: Markov, Chebychev, Chernoff and Mcdiarmid inequalities, convergence in probability, mean, and almost sure.
+Random Process: Example and formal definition, stationarity, autocorrelation, and cross correlation function, ergodicity, KL expansion, introduction to special random process such as Markov chains, Martinagale and Brownian motion. 
+Markov Chain: Communication classes and its properties, stationary distribution and its existence, Poisson processes, Example applications of Markov decision process. Applications of the tools discussed in the course in electrical engineering and computer science.
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: Exposure to Calculus</h2>
+    </div>
+  </div>
+</div>
+
+<div id="MA104m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>MA 104 Differential Equations-I</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-1-0-4</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Half</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>Exact equations, integrating factors and Bernoulli
+equations. Orthogonal trajectories. Lipschitz
+condition, Picard's theorem, examples on nonuniqueness.
+Linear differential equations generalities.
+Linear dependence and Wronskians. Dimensionality of
+space of solutions, Abel-Liouville formula. Linear
+ODE's with constant coefficients, the characteristic
+equations. Cauchy-Euler equations. Method of
+undetermined coefficients. Method of variation of
+parameters. Laplace transform generalities. Shifting
+theorems. Convolution theorem.
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE302m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 302 Principles of communication systems</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>Introduction: Analog or Digital? Why analog design
+remains important? A Technology Perspective, Scope of
+this course, why study Communication Systems?
+Signals and Systems: Signals, Linear Time Invariant
+Systems and its analysis, Multi-rate systems, Fourier
+Series and transforms: application and its properties,
+Energy Spectral Density and Bandwidth, Baseband and
+Passband Signals,
+Complex baseband equivalent of passband filtering,
+General Comments on Complex Baseband, Wireless
+Channel Modeling in Complex Baseband
+Analog Communication Techniques: Amplitude
+Modulation, Double Sideband (DSB) Suppressed Carrier
+(SC), Conventional AM, Single Sideband Modulation
+(SSB), Vestigial Sideband (VSB) Modulation, Quadrature
+Amplitude Modulation, Angle Modulation: FM Spectrum
+and the Phase Locked Loop, applications of analog
+communications.
+Digital Modulation: Introduction to signal
+constellations,
+Power Spectral Density, Design for Bandlimited
+Channels, Nyquists Sampling Theorem and the Sinc
+Pulse, Nyquist Criterion for ISI Avoidance, Linear
+modulation as a building block, Orthogonal and
+Biorthogonal Modulation.
+Recap of Probability Basics: Random Variables,
+Multiple Random Variables, or Random Vectors,
+Functions of random variables, Expectation, Joint
+Gaussianity, Introduction to random process, Wide Sense
+Stationarity and Stationarity, Power Spectral Density, 
+50
+Noise Modeling, Linear Operations on Random Processes,
+Filtering and Correlation.
+Optimal Demodulation: Hypothesis Testing, ML and
+MAP decision rules, Signal Space Concepts, representing
+signals as vectors, Hypothesis testing in signal space,
+Optimal Reception in AWGN, Geometry of the ML
+decision rule and performance analysis of various
+modulation schemes.
+Channel Coding: Motivation, Model for Channel
+Coding, Shannons promise, design implications of
+Shannon limits, introducing to linear codes, soft decisions
+and belief propagation
+(if time permits)
+Dispersive Channels and MIMO: Single carrier system
+model, Linear equalization, quick introduction to
+Orthogonal Frequency Division Multiplexing,
+Introduction to MIMO systems.
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: Exposure to Basic Calculus or equivalent</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE314m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 314 Digital Signal Processing Lab</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>0-0-3-3</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>Using Matlab (offline):
+• Generation of elementary digital signals
+• Concept of digital frequency
+• Sampling theorem
+• Convolution and correlation
+• DFT and FFT
+• Design of IIR filters
+• Design of FIR filters
+• Applications of signals processing Using DSP Kits
+(Real time):
+• Generation of elementary digital signals
+• Convolution and correlation
+• DFT and FFT
+• Application of IIR filters
+• Application of FIR filters
+• Some speech processing experiments
+• Some audio processing experiments
+• Some biomedical signal processing experiments
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: Digital Signal Processing</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE312m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 312 Control Systems lab</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>0-0-3-3</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>Experiments related to:
+• Modeling of systems: Obtaining transfer function
+models of mechanical/electrical/electro-mechanical
+systems Ordinary
+• Performance and stability: Time response, steady-state
+error, stability etc.
+• Basic modes of feedback control: Proportional,
+Integral, Derivative.
+• Root locus method of controller design
+• Frequency-domain techniques: Frequency responses
+• Compensator design using frequency response Course
+projects related to:
+• Advanced control concepts
+• Real life applications of control systems in various
+fields
+• Applications of Signal Processing Techniques to
+Control Systems etc.
+
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: Exposure to Control Systems</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE311m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 311: Electrical Machines and Power Electronics Lab</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>0-0-3-3</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>Experiments reinforcing concepts learnt in EE206</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE305m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 305 Digital Signal Processing</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>3-0-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Autumn</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>Discrete time signals: Sequences, representation of signals on orthogonal basis, Sampling and reconstruction of signals, Discrete systems: attributes, Z-Transform, Analysis of LSI systems, Frequency analysis, Inverse Systems, Discrete Fourier Transform (DFT), Fast Fourier Transform algorithm, Implementation of Discrete Time Systems. Design of FIR Digital filters: Window method, Park-McClellan's method. Design of IIR Digital Filters: Butterworth, Chebyshev and Elliptic Approximations, Lowpass, Bandpass, Bandstop and High pass filters. Effect of finite register length in FIR filter design. Parametric and non-parametric spectral estimation. Introduction to multirate signal processing. Application of DSP to Speech and Radar signal processing.
+Assignments and course projects based on MATLAB and ARM based digital signal processing lab.
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="EE204m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 204 Digital Systems</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>2-1-0-6</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>• Introduction to Digital Systems
+• Number systems and Logic: Number Systems,
+Different Codes, Boolean logic, basic gates, truth tables
+• Introduction to Logic families: TTL, CMOS etc.
+• Boolean Algebra: Laws of Boolean Algebra, logic
+minimization using K maps
+• Combinational Logic Circuits: Adders, Subtractors,
+Multipliers, MSI components like Comparators,
+Decoders, Encoders, MUXs, DEMUXs
+• Sequential circuits: Latches, Flipflops, Analysis of
+clocked sequential circuits, Registers and Counters
+(Synchronous and Asynchronous), State Machines
+• Introduction to Hardware Description
+Languages
+• Array based logic elements: Memory, PLA, PLD,
+FPGA
+• Special Topics: Asynchronous State machines, Testing
+and Verification of Digital Systems
+
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+
+<div id="EE212m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>EE 212 Electronic Devices Lab</h2>
+    </div>
+    <div class="modal-body">
+      <table class="modaltable">
+        <col width="30%">
+      <tr>
+        <td>Credits</td>
+        <td>0-0-3-3</td>
+      </tr>
+      <tr>
+        <td>Type of Course</td>
+        <td>Core course</td>
+      </tr>
+      <tr>
+        <td>Semester in which normally to be offered</td>
+        <td>Spring</td>
+      </tr>
+      <tr>
+        <td>Full or Half Course</td>
+        <td>Full</td>
+      </tr>
+      <tr>
+        <td>Course Content</td>
+        <td>This purpose of this lab is to complement the Electronic
+Devices Theory Course. The following is the tentative list
+of experiments for this lab:
+1. Hall Effect
+2. Diode application – Rectifier circuits
+3. Diode application – clamper circuits
+4. Zener Diode application – Voltage Regulator
+5. LED and Photodiodes characteristics
+6. Temperature dependent characteristics of Diode
+7. BJT Biasing
+8. BJT CE amplifier and its frequency response
+9. MOS-Cap CV Characteristics
+10. MOSFET Biasing
+11. MOSFET CS amplifier and its frequency response
+2 weeks Experiments on Advanced topics in Devices
+</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NIL</h2>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+var mee102 = document.getElementById('EE102m');
+var bee102 = document.getElementById("EE102");
+var tbee102 = document.getElementById("TEE102");
+var see102 = document.getElementsByClassName("close")[0];
+
+bee102.onclick = function() {
+    mee102.style.display = "block";
+}
+tbee102.onclick = function() {
+    mee102.style.display = "block";
+}
+see102.onclick = function() {
+    mee102.style.display = "none";
+}
+
+var mee210 = document.getElementById('EE210m');
+var bee210 = document.getElementById("EE210");
+var tbee210 = document.getElementById("TEE210");
+var see210 = document.getElementsByClassName("close")[1];
+
+bee210.onclick = function() {
+    mee210.style.display = "block";
+}
+tbee210.onclick = function() {
+    mee210.style.display = "block";
+}
+see210.onclick = function() {
+    mee210.style.display = "none";
+}
+
+var mee202 = document.getElementById('EE202m');
+var bee202 = document.getElementById("EE202");
+var tbee202 = document.getElementById("TEE202");
+var see202 = document.getElementsByClassName("close")[2];
+
+bee202.onclick = function() {
+    mee202.style.display = "block";
+}
+tbee202.onclick = function() {
+    mee202.style.display = "block";
+}
+see202.onclick = function() {
+    mee202.style.display = "none";
+}
+
+var mph102 = document.getElementById('PH102m');
+var bph102 = document.getElementById("PH102");
+var tbph102 = document.getElementById("TPH102");
+var sph102 = document.getElementsByClassName("close")[3];
+
+bph102.onclick = function() {
+    mph102.style.display = "block";
+}
+tbph102.onclick = function() {
+    mph102.style.display = "block";
+}
+sph102.onclick = function() {
+    mph102.style.display = "none";
+}
+
+var mee205 = document.getElementById('EE205m');
+var bee205 = document.getElementById("EE205");
+var tbee205 = document.getElementById("TEE205");
+var see205 = document.getElementsByClassName("close")[4];
+
+bee205.onclick = function() {
+    mee205.style.display = "block";
+}
+tbee205.onclick = function() {
+    mee205.style.display = "block";
+}
+see205.onclick = function() {
+    mee205.style.display = "none";
+}
+
+var mee203 = document.getElementById('EE203m');
+var bee203 = document.getElementById("EE203");
+var tbee203 = document.getElementById("TEE203");
+var see203 = document.getElementsByClassName("close")[5];
+
+bee203.onclick = function() {
+    mee203.style.display = "block";
+}
+tbee203.onclick = function() {
+    mee203.style.display = "block";
+}
+see203.onclick = function() {
+    mee203.style.display = "none";
+}
+
+var mee101 = document.getElementById('EE101m');
+var bee101 = document.getElementById("EE101");
+var tbee101 = document.getElementById("TEE101");
+var see101 = document.getElementsByClassName("close")[6];
+
+bee101.onclick = function() {
+    mee101.style.display = "block";
+}
+tbee101.onclick = function() {
+    mee101.style.display = "block";
+}
+see101.onclick = function() {
+    mee101.style.display = "none";
+}
+
+var mma101 = document.getElementById('MA101m');
+var bma101 = document.getElementById("MA101");
+var tbma101 = document.getElementById("TMA101");
+var sma101 = document.getElementsByClassName("close")[7];
+
+bma101.onclick = function() {
+    mma101.style.display = "block";
+}
+tbma101.onclick = function() {
+    mma101.style.display = "block";
+}
+sma101.onclick = function() {
+    mma101.style.display = "none";
+}
+
+var mma202 = document.getElementById('MA202m');
+var bma202 = document.getElementById("MA202");
+var tbma202 = document.getElementById("TMA202");
+var sma202 = document.getElementsByClassName("close")[8];
+
+bma202.onclick = function() {
+    mma202.style.display = "block";
+}
+tbma202.onclick = function() {
+    mma202.style.display = "block";
+}
+sma202.onclick = function() {
+    mma202.style.display = "none";
+}
+
+var mma102 = document.getElementById('MA102m');
+var bma102 = document.getElementById("MA102");
+var tbma102 = document.getElementById("TMA102");
+var sma102 = document.getElementsByClassName("close")[9];
+
+bma102.onclick = function() {
+    mma102.style.display = "block";
+}
+tbma102.onclick = function() {
+    mma102.style.display = "block";
+}
+sma102.onclick = function() {
+    mma102.style.display = "none";
+}
+
+var mee207 = document.getElementById('EE207m');
+var bee207 = document.getElementById("EE207");
+var tbee207 = document.getElementById("TEE207");
+var see207 = document.getElementsByClassName("close")[10];
+
+bee207.onclick = function() {
+    mee207.style.display = "block";
+}
+tbee207.onclick = function() {
+    mee207.style.display = "block";
+}
+see207.onclick = function() {
+    mee207.style.display = "none";
+}
+
+var mee206 = document.getElementById('EE206m');
+var bee206 = document.getElementById("EE206");
+var tbee206 = document.getElementById("TEE206");
+var see206 = document.getElementsByClassName("close")[11];
+
+bee206.onclick = function() {
+    mee206.style.display = "block";
+}
+tbee206.onclick = function() {
+    mee206.style.display = "block";
+}
+see206.onclick = function() {
+    mee206.style.display = "none";
+}
+
+var mee201 = document.getElementById('EE201m');
+var bee201 = document.getElementById("EE201");
+var tbee201 = document.getElementById("TEE201");
+var see201 = document.getElementsByClassName("close")[12];
+
+bee201.onclick = function() {
+    mee201.style.display = "block";
+}
+tbee201.onclick = function() {
+    mee201.style.display = "block";
+}
+see201.onclick = function() {
+    mee201.style.display = "none";
+}
+
+var mee316 = document.getElementById('EE316m');
+var bee316 = document.getElementById("EE316");
+var tbee316 = document.getElementById("TEE316");
+var see316 = document.getElementsByClassName("close")[13];
+
+bee316.onclick = function() {
+    mee316.style.display = "block";
+}
+tbee316.onclick = function() {
+    mee316.style.display = "block";
+}
+see316.onclick = function() {
+    mee316.style.display = "none";
+}
+
+var mee303 = document.getElementById('EE303m');
+var bee303 = document.getElementById("EE303");
+var tbee303 = document.getElementById("TEE303");
+var see303 = document.getElementsByClassName("close")[14];
+
+bee303.onclick = function() {
+    mee303.style.display = "block";
+}
+tbee303.onclick = function() {
+    mee303.style.display = "block";
+}
+see303.onclick = function() {
+    mee303.style.display = "none";
+}
+
+var mee208 = document.getElementById('EE208m');
+var bee208 = document.getElementById("EE208");
+var tbee208 = document.getElementById("TEE208");
+var see208 = document.getElementsByClassName("close")[15];
+
+bee208.onclick = function() {
+    mee208.style.display = "block";
+}
+tbee208.onclick = function() {
+    mee208.style.display = "block";
+}
+see208.onclick = function() {
+    mee208.style.display = "none";
+}
+
+var mma104 = document.getElementById('MA104m');
+var bma104 = document.getElementById("MA104");
+var tbma104 = document.getElementById("TMA104");
+var sma104 = document.getElementsByClassName("close")[17];
+
+bma104.onclick = function() {
+    mma104.style.display = "block";
+}
+tbma104.onclick = function() {
+    mma104.style.display = "block";
+}
+sma104.onclick = function() {
+    mma104.style.display = "none";
+}
+
+var mee307 = document.getElementById('EE307m');
+var bee307 = document.getElementById("EE307");
+var tbee307 = document.getElementById("TEE307");
+var see307 = document.getElementsByClassName("close")[16];
+
+bee307.onclick = function() {
+    mee307.style.display = "block";
+}
+tbee307.onclick = function() {
+    mee307.style.display = "block";
+}
+see307.onclick = function() {
+    mee307.style.display = "none";
+}
+
+var mee302 = document.getElementById('EE302m');
+var bee302 = document.getElementById("EE302");
+var tbee302 = document.getElementById("TEE302");
+var see302 = document.getElementsByClassName("close")[18];
+
+bee302.onclick = function() {
+    mee302.style.display = "block";
+}
+tbee302.onclick = function() {
+    mee302.style.display = "block";
+}
+see302.onclick = function() {
+    mee302.style.display = "none";
+}
+
+var mee314 = document.getElementById('EE314m');
+var bee314 = document.getElementById("EE314");
+var tbee314 = document.getElementById("TEE314");
+var see314 = document.getElementsByClassName("close")[19];
+
+bee314.onclick = function() {
+    mee314.style.display = "block";
+}
+tbee314.onclick = function() {
+    mee314.style.display = "block";
+}
+see314.onclick = function() {
+    mee314.style.display = "none";
+}
+
+var mee312 = document.getElementById('EE312m');
+var bee312 = document.getElementById("EE312");
+var tbee312 = document.getElementById("TEE312");
+var see312 = document.getElementsByClassName("close")[20];
+
+bee312.onclick = function() {
+    mee312.style.display = "block";
+}
+tbee312.onclick = function() {
+    mee312.style.display = "block";
+}
+see312.onclick = function() {
+    mee312.style.display = "none";
+}
+
+var mee311 = document.getElementById('EE311m');
+var bee311 = document.getElementById("EE311");
+var tbee311 = document.getElementById("TEE311");
+var see311 = document.getElementsByClassName("close")[21];
+
+bee311.onclick = function() {
+    mee311.style.display = "block";
+}
+tbee311.onclick = function() {
+    mee311.style.display = "block";
+}
+see311.onclick = function() {
+    mee311.style.display = "none";
+}
+
+var mee305 = document.getElementById('EE305m');
+var bee305 = document.getElementById("EE305");
+var tbee305 = document.getElementById("TEE305");
+var see305 = document.getElementsByClassName("close")[22];
+
+bee305.onclick = function() {
+    mee305.style.display = "block";
+}
+tbee305.onclick = function() {
+    mee305.style.display = "block";
+}
+see305.onclick = function() {
+    mee305.style.display = "none";
+}
+
+var mee204 = document.getElementById('EE204m');
+var bee204 = document.getElementById("EE204");
+var tbee204 = document.getElementById("TEE204");
+var see204 = document.getElementsByClassName("close")[23];
+
+bee204.onclick = function() {
+    mee204.style.display = "block";
+}
+tbee204.onclick = function() {
+    mee204.style.display = "block";
+}
+see204.onclick = function() {
+    mee204.style.display = "none";
+}
+
+var mee212 = document.getElementById('EE212m');
+var bee212 = document.getElementById("EE212");
+var tbee212 = document.getElementById("TEE212");
+var see212 = document.getElementsByClassName("close")[24];
+
+bee212.onclick = function() {
+    mee212.style.display = "block";
+}
+tbee212.onclick = function() {
+    mee212.style.display = "block";
+}
+see212.onclick = function() {
+    mee212.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+    if (event.target == mma104) {
+        mma104.style.display = "none";
+    }
+
+    if (event.target == mee208) {
+        mee208.style.display = "none";
+    }
+
+    if (event.target == mee212) {
+        mee212.style.display = "none";
+    }
+
+    if (event.target == mee204) {
+        mee204.style.display = "none";
+    }
+
+    if (event.target == mee305) {
+        mee305.style.display = "none";
+    }
+
+    if (event.target == mee311) {
+        mee311.style.display = "none";
+    }
+
+    if (event.target == mee312) {
+        mee312.style.display = "none";
+    }
+
+    if (event.target == mee314) {
+        mee314.style.display = "none";
+    }
+    
+    if (event.target == mee302) {
+        mee302.style.display = "none";
+    }
+
+    if (event.target == mee302) {
+        mee302.style.display = "none";
+    }
+
+    if (event.target == mee302) {
+        mee302.style.display = "none";
+    }
+
+    if (event.target == mee208) {
+        mee208.style.display = "none";
+    }
+
+    if (event.target == mee102) {
+        mee102.style.display = "none";
+    }
+
+    if (event.target == mee210) {
+        mee210.style.display = "none";
+    }
+
+    if (event.target == mee202) {
+        mee202.style.display = "none";
+    }
+
+    if (event.target == mph102) {
+        mph102.style.display = "none";
+    }
+
+    if (event.target == mee205) {
+        mee205.style.display = "none";
+    }
+
+    if (event.target == mee203) {
+        mee203.style.display = "none";
+    }
+
+    if (event.target == mma101) {
+        mma101.style.display = "none";
+    }
+
+    if (event.target == mma202) {
+        mma202.style.display = "none";
+    }
+
+    if (event.target == mma102) {
+        mma102.style.display = "none";
+    }
+
+    if (event.target == mee207) {
+        mee207.style.display = "none";
+    }
+
+    if (event.target == mee206) {
+        mee206.style.display = "none";
+    }
+
+    if (event.target == mee201) {
+        mee201.style.display = "none";
+    }
+
+    if (event.target == mee316) {
+        mee316.style.display = "none";
+    }
+
+    if (event.target == mee303) {
+        mee303.style.display = "none";
+    }
+    if (event.target == mee307) {
+        mee307.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

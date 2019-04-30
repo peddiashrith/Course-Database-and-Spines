@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="lightblue">
+<head>
+<title>CSE</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width="device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="menustyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+
+    <style type="text/css">
+        
+    
+
+  body{
+      background-color: #EDC7B7 ;
+    }
+
+  #heading
+        {
+          width: 100%;
+          margin: auto;
+          color: white;
+          height: 200px;
+          /*background-image: linear-gradient(to right, #0086C6, #42C2FF) ;*/
+          background-color: #AC3B61;
+          /*margin-left: 20px;*/
+          size: 30px;
+          font-size: 50px;
+          font-family: "Caudex";
+          text-align: left;
+          vertical-align: middle;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          /*border: 5px solid darkblue;*/
+        }
+  }
+</style>
+
+<style type="text/css">
+
+table {
+
+font-family: arial, sans-serif;
+width: 100%;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;	    
+}
+
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+.arrow{
+  stroke:rgb(0,0,0);
+  marker-end:url(#markerArrow)
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    font-size: 20px;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    text-align: left;
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}	
+</style>
+</head>
+<body>
+<script type="text/javascript">
+var mainlist =[]
+var cs102 = []
+cs102.push("CS102")
+mainlist.push(cs102)
+
+var ma301 = []
+ma301.push("MA301")
+ma301.push("CS203")
+mainlist.push(ma301)
+
+var cs201 = []
+cs201.push("CS201")
+cs201.push("CS102")
+mainlist.push(cs201)
+
+var cs206 = []
+cs206.push("CS206")
+cs206.push("CS201")
+cs206.push("CS102")
+cs206.push("CS203")
+cs206.push("CS211")
+mainlist.push(cs206)
+
+var cs203 = []
+cs203.push("CS203")
+mainlist.push(cs203)
+
+var cs213 = []
+cs213.push("CS213")
+mainlist.push(cs213)
+
+var cs202 = []
+cs202.push("CS202")
+cs202.push("CS203")
+mainlist.push(cs202)
+
+var cs204 = []
+cs204.push("CS204")
+mainlist.push(cs204)
+
+var cs212 = []
+cs212.push("CS212")
+mainlist.push(cs212)
+
+var cs306 = []
+cs306.push("CS306")
+mainlist.push(cs306)
+
+var cs302 = []
+cs302.push("CS302")
+mainlist.push(cs302)
+
+var cs303 = []
+cs303.push("CS303")
+mainlist.push(cs303)
+
+var cs311 = []
+cs311.push("CS311")
+mainlist.push(cs311)
+
+var cs211 = []
+cs211.push("CS211")
+cs211.push("CS102")
+mainlist.push(cs211)
+
+var cs311 = []
+cs311.push("CS311")
+mainlist.push(cs311)
+
+var cs301 = []
+cs301.push("CS301")
+mainlist.push(cs301)
+
+var cs312 = []
+cs312.push("CS312")
+mainlist.push(cs312)
+
+var cs314 = []
+cs314.push("CS314")
+cs314.push("CS301")
+mainlist.push(cs314)
+
+var cs304 = []
+cs304.push("CS304")
+cs304.push("CS301")
+mainlist.push(cs304)
+function joinnodes(give)
+{
+	document.getElementById(give).setAttribute("fill","#FF7B00");
+  document.getElementById(give).setAttribute("r","55");
+
+	var index = 0
+	for(var i=0;i<mainlist.length;i++)
+	{
+		var temp = mainlist[i];
+		if(temp[0] == give)
+		{
+			index = i;
+			break;
+		}
+	}
+	var cars = mainlist[index];
+	for(var a=1;a<cars.length;a++)
+	{
+		var lineid = cars[0] + "to" + cars[a];
+		document.getElementById(lineid).setAttribute("stroke-width","2")
+		document.getElementById(cars[a]).setAttribute("fill","#FF7B00")
+    document.getElementById(give).setAttribute("r","55");
+		joinnodes(cars[a]);
+	}
+}
+function tjoinnodes(give1)
+{
+	give = give1[1] + give1[2] + give1[3] + give1[4] + give1[5]
+	document.getElementById(give).setAttribute("fill","#FF7B00");
+  document.getElementById(give).setAttribute("r","55");
+	var index = 0
+	for(var i=0;i<mainlist.length;i++)
+	{
+		var temp = mainlist[i];
+		if(temp[0] == give)
+		{
+			index = i;
+			break;
+		}
+	}
+	var cars = mainlist[index];
+	for(var a=1;a<cars.length;a++)
+	{
+		var lineid = cars[0] + "to" + cars[a];
+		document.getElementById(lineid).setAttribute("stroke-width","2")
+		document.getElementById(cars[a]).setAttribute("fill","#FF7B00")
+    document.getElementById(give).setAttribute("r","55");
+		joinnodes(cars[a]);
+	}
+}
+function removenodes(give)
+{
+	document.getElementById(give).setAttribute("fill","#53002B")
+  document.getElementById(give).setAttribute("r","50");
+	var index = 0
+	for(var i=0;i<mainlist.length;i++)
+	{
+		var temp = mainlist[i];
+		if(temp[0] == give)
+		{
+			index = i;
+			break;
+		}
+	}
+	var cars = mainlist[index];
+	for(var a=1;a<cars.length;a++)
+	{
+		var lineid = cars[0] + "to" + cars[a];
+		document.getElementById(lineid).setAttribute("stroke-width","0")
+		document.getElementById(cars[a]).setAttribute("fill","#53002B")
+    document.getElementById(give).setAttribute("r","50");
+		removenodes(cars[a]);
+	}
+}
+function tremovenodes(give1)
+{
+	give = give1[1] + give1[2] + give1[3] + give1[4] + give1[5]
+	document.getElementById(give).setAttribute("fill","#53002B")
+  document.getElementById(give).setAttribute("r","50");
+	var index = 0
+	for(var i=0;i<mainlist.length;i++)
+	{
+		var temp = mainlist[i];
+		if(temp[0] == give)
+		{
+			index = i;
+			break;
+		}
+	}
+	var cars = mainlist[index];
+	for(var a=1;a<cars.length;a++)
+	{
+		var lineid = cars[0] + "to" + cars[a];
+		document.getElementById(lineid).setAttribute("stroke-width","0")
+		document.getElementById(cars[a]).setAttribute("fill","#53002B")
+    document.getElementById(give).setAttribute("r","55");
+		removenodes(cars[a]);
+	}
+}
+</script>
+
+<body id="cds">
+
+<div id="heading">
+    <img src="logo_white.png" width="200px" height="160px">
+    Course Database and Spines    
+</div>
+
+<br>
+<br>
+<div class="container">
+   <p align="center"> 
+  <button type="button"  class="button2" data-toggle="collapse" data-target="#demo"><span>Select a Branch </span></button>  
+    </p> 
+    <center>
+  <div id="demo" class="collapse">
+    
+    
+    <br>
+
+      <!--
+    <center><div class="csebox">
+      <button type="button" class="button1">Computer Science & Engineering</button>
+    </div>
+  </center>
+    <br>
+    <center>
+    <div class="eebox">
+      <button type="button" class="button3">Electrical Engineering</button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="mechbox">
+      <button type="button" class="button4">Mechanical Engineering</button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="othbox">
+      <button type="button" class="button5">Other Courses</button>
+    </div>
+    </center>-->
+
+    <center><div class="csebox">
+      <button type="button" class="button1" onclick="window.open('realcse.html', '_self')">Computer Science & Engineering</button>
+    </div>
+  </center>
+    <br>
+    <center>
+    <div class="eebox">
+      <button type="button" class="button3" onclick="window.open('realee.html', '_self')">Electrical Engineering</button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="mechbox">
+      <button type="button" class="button4" onclick="window.open('realmec.html', '_self')">Mechanical Engineering </button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="othbox">
+      <button type="button" class="button5" onclick="window.open('othercourses.html', '_self')">Other Courses</button>
+    </div>
+    </center>
+    <br>
+    <center>
+    <div class="othbox">
+      <button type="button" class="button6" onclick="window.open('electives.html', '_self')">Electives</button>
+    </div>
+    </center>
+
+</center> 
+  </center>
+
+  </div>
+</div>
+
+
+
+</div>
+
+<center>
+<svg height="1200" width="1200">
+<defs>
+	<marker id="markerArrow" markerWidth="50" markerHeight="50" refX="50" refY="6" orient="auto">
+	<path d="M2,2 L2,11 L10,6 L2,2" style="fill: orange;" />
+    </marker> 
+</defs>
+<line id="CS206toCS102" stroke-width="0" style="stroke:red;" x2="300" y2="250" x1="250" y1="100" class="arrow" />
+
+<line id="CS201toCS102" stroke-width="0" style="stroke:red;" x2="100" y2="250" x1="250" y1="100" class="arrow" />
+
+<line id="CS211toCS102" stroke-width="0" style="stroke:red;" x2="600" y2="400" x1="250" y1="100" class="arrow" />
+
+<line id="MA301toCS203" stroke-width="0" style="stroke:red;" x2="450" y2="100" x1="700" y1="250" class="arrow" />
+
+<line id="CS202toCS203" stroke-width="0" style="stroke:red;" x2="900" y2="250" x1="750" y1="250" class="arrow" />
+
+<line id="CS206toCS203" stroke-width="0" style="stroke:red;" x2="300" y2="250" x1="700" y1="250" class="arrow" />
+
+<line id="CS206toCS211" stroke-width="0" style="stroke:red;" x2="300" y2="250" x1="600" y1="400" class="arrow" />
+
+<line id="CS314toCS301" stroke-width="0" style="stroke:red;" x2="700" y2="550" x1="800" y1="400" class="arrow" />
+
+<line id="CS304toCS301" stroke-width="0" style="stroke:red;" x2="900" y2="550" x1="800" y1="400" class="arrow" />
+
+<line id="CS206toCS201" stroke-width="0" style="stroke:red;" x2="300" y2="250" x1="100" y1="250" class="arrow" />
+
+<circle onmouseover="joinnodes('CS102')" onmouseleave="removenodes('CS102')" id="CS102" cx="250" cy="100" r="50" fill="#53002B" />
+<text id="TCS102" onmouseover="tjoinnodes('TCS102')" onmouseleave="tremovenodes('TCS102')" x="250" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS102 </text>
+
+<circle onmouseover="joinnodes('CS201')" onmouseleave="removenodes('CS201')" id="CS201" cx="100" cy="250" r="50" stroke="black" fill="#53002B" />
+<text id="TCS201" onmouseover="tjoinnodes('TCS201')" onmouseleave="tremovenodes('TCS201')" x="100" y="250" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS201 </text>
+
+<circle onmouseover="joinnodes('MA301')" onmouseleave="removenodes('MA301')" id="MA301" cx="450" cy="100" r="50" stroke="black" fill="#53002B" />
+<text id="TMA301" onmouseover="tjoinnodes('TMA301')" onmouseleave="tremovenodes('TMA301')" x="450" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> MA301 </text>
+
+<circle onmouseover="joinnodes('CS213')" onmouseleave="removenodes('CS213')" id="CS213" cx="650" cy="100" r="50" stroke="black" fill="#53002B" />
+<text id="TCS213" onmouseover="tjoinnodes('TCS213')" onmouseleave="tremovenodes('TCS213')" x="650" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS213 </text>
+
+<circle onmouseover="joinnodes('CS206')" onmouseleave="removenodes('CS206')" id="CS206" cx="300" cy="250" r="50" stroke="black" fill="#53002B" />
+<text id="TCS206" onmouseover="tjoinnodes('TCS206')" onmouseleave="tremovenodes('TCS206')" x="300" y="250" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS206 </text>
+
+<circle onmouseover="joinnodes('CS203')" onmouseleave="removenodes('CS203')" id="CS203" cx="700" cy="250" r="50" stroke="black" fill="#53002B" />
+<text id="TCS203" onmouseover="tjoinnodes('TCS203')" onmouseleave="tremovenodes('TCS203')" x="700" y="250" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS203 </text>
+
+<circle onmouseover="joinnodes('CS202')" onmouseleave="removenodes('CS202')" id="CS202" cx="900" cy="250" r="50" stroke="black" fill="#53002B" />
+<text id="TCS202" onmouseover="tjoinnodes('TCS202')" onmouseleave="tremovenodes('TCS202')" x="900" y="250" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS202 </text>
+
+<circle onmouseover="joinnodes('CS204')" onmouseleave="removenodes('CS204')" id="CS204" cx="850" cy="100" r="50" stroke="black" fill="#53002B" />
+<text id="TCS204" onmouseover="tjoinnodes('TCS204')" onmouseleave="tremovenodes('TCS204')" x="850" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS204 </text>
+
+<circle onmouseover="joinnodes('CS212')" onmouseleave="removenodes('CS212')" id="CS212" cx="1100" cy="250" r="50" stroke="black" fill="#53002B" />
+<text id="TCS212" onmouseover="tjoinnodes('TCS212')" onmouseleave="tremovenodes('TCS212')" x="1100" y="250" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS212 </text>
+
+<circle onmouseover="joinnodes('CS306')" onmouseleave="removenodes('CS306')" id="CS306" cx="200" cy="400" r="50" stroke="black" fill="#53002B" />
+<text id="TCS306" onmouseover="tjoinnodes('TCS306')" onmouseleave="tremovenodes('TCS306')" x="200" y="400" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS306 </text>
+
+<circle onmouseover="joinnodes('CS303')" onmouseleave="removenodes('CS303')" id="CS303" cx="400" cy="400" r="50" stroke="black" fill="#53002B" />
+<text id="TCS303" onmouseover="tjoinnodes('TCS303')" onmouseleave="tremovenodes('TCS303')" x="400" y="400" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS303 </text>
+
+<circle onmouseover="joinnodes('CS211')" onmouseleave="removenodes('CS211')" id="CS211" cx="600" cy="400" r="50" stroke="black" fill="#53002B" />
+<text id="TCS211" onmouseover="tjoinnodes('TCS211')" onmouseleave="tremovenodes('TCS211')" x="600" y="400" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS211 </text>
+
+<circle onmouseover="joinnodes('CS301')" onmouseleave="removenodes('CS301')" id="CS301" cx="800" cy="400" r="50" stroke="black" fill="#53002B" />
+<text id="TCS301" onmouseover="tjoinnodes('TCS301')" onmouseleave="tremovenodes('TCS301')" x="800" y="400" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS301 </text>
+
+<circle onmouseover="joinnodes('CS313')" onmouseleave="removenodes('CS313')" id="CS313" cx="1000" cy="400" r="50" stroke="black" fill="#53002B" />
+<text id="TCS313" onmouseover="tjoinnodes('TCS313')" onmouseleave="tremovenodes('TCS313')" x="1000" y="400" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS313 </text>
+
+<circle onmouseover="joinnodes('CS302')" onmouseleave="removenodes('CS302')" id="CS302" cx="300" cy="550" r="50" stroke="black" fill="#53002B" />
+<text id="TCS302" onmouseover="tjoinnodes('TCS302')" onmouseleave="tremovenodes('TCS302')" x="300" y="550" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS302 </text>
+
+<circle onmouseover="joinnodes('CS311')" onmouseleave="removenodes('CS311')" id="CS311" cx="500" cy="550" r="50" stroke="black" fill="#53002B" />
+<text id="TCS311" onmouseover="tjoinnodes('TCS311')" onmouseleave="tremovenodes('TCS311')" x="500" y="550" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS311 </text>
+
+<circle onmouseover="joinnodes('CS314')" onmouseleave="removenodes('CS314')" id="CS314" cx="700" cy="550" r="50" stroke="black" fill="#53002B" />
+<text id="TCS314" onmouseover="tjoinnodes('TCS314')" onmouseleave="tremovenodes('TCS314')" x="700" y="550" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS314 </text>
+
+<circle onmouseover="joinnodes('CS304')" onmouseleave="removenodes('CS304')" id="CS304" cx="900" cy="550" r="50" stroke="black" fill="#53002B" />
+<text id="TCS304" onmouseover="tjoinnodes('TCS304')" onmouseleave="tremovenodes('TCS304')" x="900" y="550" alignment-baseline="middle" text-anchor="middle" font-family="Montserrat" font-size="25" fill="yellow"> CS304 </text>
+</center>
+
+<div id="CS102m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS102 Computer Programming and Utilization</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-2-8</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		This course provides an introduction to problem solving with computers using a modern language such as Java or C/C++. Topics covered will include:Utilization: Developer fundamentals such as editor, integrated programming environment, Unix shell, modules, libraries. Programming features: Machine representation, primitive types, arrays and records, objects, expressions, control statements,iteration, procedures, functions, and basic i/o. Applications: Sample problems in engineering, science, text processing,and numerical methods.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="MA301m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>MA301 Elementary Algebra and Number Theory</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Offered to 5th semester Computer Science and Engineering</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Groups, subgroups, normal subgroups and quotient groups; homomorphism theorems; Symmetric and alternating groups; Group actions, Sylow theorems and applications. Rings; subrings, ideals, factor rings, polynomial rings, discriminents. Fields, algebraic and transcendental extensions, Separable and normal extensions, Statement of Galois theorem, Finite fields. Congruence relations in integers; Chinese reminder theorem; quadratic reciprocity law, cyclotomic polynomials
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: CS203 Discrete Structures</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS213m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS213 Software Systems Laboratory</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>1-3-0-8</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		1. Vim/emacs HTML, CSS<br>
+		    2. Report and presentation software: latex, beamer, drawing software (e.g. inkscape, xfig, open-office)<br> 
+		    3. IDE (e.g. eclipse, netbeans), code reading, debugging Basic Java Java collections, interfaces<br>
+		    4. Java threads Java GUI Introduction to documentation: e.g. doxygen/javadocs<br>
+			5. Version management: SVN/Git<br>
+		    6. Unix basics: shell, file system, permissions, process hierarchy, process monitoring, ssh, rsync<br>  
+		    7. Unix tools: e.g. awk, sed, grep, find, head, tail, tar, cut, sort<br>
+		    8. Bash scripting: I/O redirection, pipes<br>
+		    9. Python programming<br>
+		   	10. Makefile, libraries and linking<br>  
+		    11. Graph plotting software (e.g., gnuplot)<br>  
+		    12. Profiling tools (e.g., gprof, prof)<br>
+		    13. Optional topics (may be specific to individual students302222 projects): intro to sockets, basic SQL for data storage,JDBC/pygresql<br>  
+			A project would be included which touches upon many of the above topics, helping students see the connect across seemingly disparate topics. The project is also expected to be a significant load: 20-30 hours of work.<br>
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS204m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS204 Computer Networks</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Design of Computer Networking protocols at all layers:
+			transmission media, data link protocols, media access
+			control, routing and congestion control, admission
+			control, traffic shaping and policing, Internet working
+			(IP) and transport layer protocols (TCP). Performance
+			analysis of networks.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+
+<div id="CS201m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS201 Data Structures and Algorithms </h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		<b>Introduction:</b> data structures, abstract data types, analysis of algorithms.<br>
+			<b>Creation and manipulation of data structures:</b> arrays, lists, stacks, queues, trees, heaps, hash tables, balanced trees, tries, graphs. Algorithms for sorting and searching, order statistics, depth-first and breadth-first search, shortest paths and minimum spanning tree.
+
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: CS102</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS206m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS206 Design and Analysis of Algorithms</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Syllabus is divided roughly 8 modules; each module roughly
+			takes two weeks.<br>
+			Module 1: Introduction Examples and motivation.
+			Asymptotic complexity: informal concepts, formal notation,
+			examples<br>
+			Module 2: Searching in list: binary search, Sorting: insertion
+			sort, selection sort, merge sort, quicksort, stability and other
+			issues.<br>
+			Module 3: Divide and conquer: binary search, recurrence
+			relations. nearest pair of points, merge sort, integer
+			multiplication, matrix multiplication.<br>
+			Module 4: Graphs: Motivation, BFS, DFS, DFS numbering
+			and applications, directed acyclic graphs, directed acyclic
+			graphs, Shortest paths: unweighted and weighted, Single
+			source shortest paths: Dijkstra, Minimum cost spanning
+			trees: Prim’s algorithm, Kruskal’s Algorithm<br>
+			Module 5: Union-Find data structure, Priority queues, heaps.
+			Heap sort. Dijstra/Prims revisited using heaps, Search Trees:
+			Introduction Traversals, insertions, deletions Balancing<br>
+			Module 6: Greedy algorithms: Greedy: Interval scheduling,
+			Proof strategies, Huffman coding.<br>
+			Module 7: Dynamic Programming: weighted interval
+			scheduling, memoization, edit distance, longest ascending
+			subsequence. matrix multiplication, shortest paths: Bellman
+			Ford, shortest paths: Floyd Warshall<br>
+			Module 8: Intractability: NP completeness, reductions,
+			examples, Misc topics.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: CS102, CS210, CS211, CS203</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS203m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS203 Discrete Structures</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		There are four modules in the course:<br>
+		<b>1) Proofs and structures</b>
+      Introduction, propositions, predicates, examples of theorems and proofs, types of proof techniques, Axioms, Mathematical Induction, Well-ordering principle, Strong Induction, Sets, Russell’s paradox, infinite sets, functions, Countable and uncountable sets, Cantor’s diagonalization technique, Relations, Equivalence relations, partitions of a set.<br>
+      <b>2) Counting and Combinatorics</b>
+     Permutations, combinations, binomial theorem, pigeon hole principle, principles of inclusion and exclusion, double counting. Recurrence relations, solving recurrence relations.<br>
+      <b>3) Elements of graph theory</b>
+     Graph models, representations, connectivity, Euler and Hamiltonian paths, planar graphs, Trees and tree traversals.<br>
+      <b>4) Introduction to abstract algebra and number theory</b>
+       Semigroups, monoids, groups, homomorphisms, normal subgroups, congruence relations. Ceiling, floor functions, divisibility. Modular arithmetic, prime numbers, primality theorems.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: CS102</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS202m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS202 Automata Theory</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      	Finite state machines (DFA/NFA/epsilon NFAs), regular
+		expressions. Properties of regular languages. My hillNerode
+		Theorem. Non-regularity. Push down automata.
+		Properties of context-free languages. Turing
+		machines:Turing hypothesis, Turing computability,
+		Nondeterministic, multi tape and other versions of Turing
+		machines. Church`s thesis, recursively enumerable sets and
+		Turing computability. Universal Turing machines.
+		Unsolvability, The halting problem, partial solvability,
+		Turing enumerability, acceptability and decidability,
+		unsolvable problems about Turing Machines. Post`s
+		correspondence problem
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: CS203</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS212m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS212 Computer Networks Laboratory</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>0-0-3-3</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Experiments to support study of the Internet protocol
+			stack: (a) Experimental study of application protocols
+			such as HTTP, FTP, SMTP, using network packet
+			sniffers and analyzers such as Ethereal. Small exercises
+			in socket programming in C/C++/Java. (b) Experiments
+			with packet sniffers to study the TCP protocol. Using
+			OS (netstat, etc) tools to understand TCP protocol FSM,
+			retransmission timer behavior, congestion control
+			behaviour. (c) Introduction to ns2 (network simulator) -
+			small simulation exercises to study TCP behavior under
+			different scenarios. (d) Setting up a small IP network -
+			configure interfaces, IP addresses and routing protocols
+			to set up a small IP network. Study dynamic behaviour
+			using packet sniffers (e) Experiments with ns2 to study
+			behaviour (especially performance of) link layer
+			protocols such as Ethernet and 802.11 wireless LAN. 
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS306m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS306 Software Engineering</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		<b>Introduction</b>
+			What is Software Engineering.<br>
+			<b>Software Development Life-cycle</b>
+			Requirements analysis, software design, coding, testing,
+			maintenance, etc.<br>
+			<b>Software life-cycle models</b>
+			Waterfall model, prototyping, interactive enhancement,
+			spiral model. Role of Management in software development.
+			Role of metrics and measurement.<br>
+			<b>Software Requirement Specification</b>
+			Problem analysis, requirement specification, validation,
+			metrics, monitoring and control.<br>
+			<b>System Design</b>
+			Problem partitioning, abstraction, top-down and bottom-up
+			design, Structured approach. Functional versus objectoriented
+			approach, design specification and verification
+			metrics, monitoring and control. Software Architecture<br>
+			<b>Coding</b>
+			Top-down and bottom-up, structured programming,
+			information hiding, programming style, and internal
+			documentation. Verification, Metrics, monitoring and
+			control.<br>
+			<b>Testing</b>
+			Levels of testing functional testing, structural testing, test
+			plane, test cases specification, reliability assessment.<br>
+			<b>Software Project Management</b>
+			Cost estimation, Project scheduling, Staffing, Software
+			configuration management, Quality assurance, Project
+			Monitoring, Risk management, etc. including tools for
+			software development to release, supporting the whole life
+			cycle.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS303m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS303 Data Bases and Information Systems</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Overview of data management systems. Relational model and query languages (relational algebra and calculus, SQL). Database design using the ER Model, ER Diagrams, UML Class Diagrams. Relational database design and normalization. Integrity and Security. Design and development of Web based information systems. Overview of storage structures and indexing, query processing and optimization, and transaction processing. Introduction to Big Data management concepts such as: distributed and scalable data storage, including distributed file systems, key value stores, column stores and graph databases, replication and consistency, and concurrent data processing using the Map Reduce paradigm. Introduction to decision support and data analysis, data warehousing and data mining, and Information Retrieval.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS211m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS211 Data Structures and Algorithms Laboratory</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>0-0-3-3</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Lab course for CS 211 is based on creating and manipulating various data structures and implementation of algorithms.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: CS102</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS301m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS301 Computer Architecture</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		The Language of Bits, Assembly Language, Logic Gates, Registers, and Memories, Processor Design, Principles of Pipelining, The Memory System, Multiprocessor Systems, I/O and Storage Devices.
+			Each concept will be first taught on the basis of the fundamental driving principles. Following this, real world examples (e.g., ARM processors) will be used to emphasize the content.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS313m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS313 Data Bases and Information Systems Laboratory</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>0-0-3-3</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Use of database systems supporting interactive SQL. Two-tier client-server applications using JDBC or ODBC, Three-tier web applications using Java servlets/JDBC or equivalent. Design of applications and user interfaces using these systems. Data analysis tools. Laboratory project involving building data backed applications with Web or mobile app frontends.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS302m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS302 Artificial Intelligence</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Search: Problem representation; State Space Search; A*
+			Algorithm and its Properties; AO* search, Minimax and
+			alpha-beta pruning, AI in games. Logic: Formal Systems;
+			Notion of Proof, Decidability, Soundness, Consistency and
+			Completeness; Predicate Calculus (PC), Resolution
+			Refutation, Herbrand Interpretation, Prolog. Knowledge
+			Representation: PC based Knowledge Representation,
+			Intelligent Question Answering, Semantic Net, Frames,
+			Script, Conceptual Dependency, Ontologies, Basics of
+			Semantic Web. Leaning: Learning from Examples, Decision
+			Trees, Neural Nets, Hidden Markov Models, Reinforcement
+			Learning, Learnability Theory. Uncertainty: Formal and
+			Empirical approaches including Bayesian Theory, Fuzzy
+			Logic, Non-monotonic Logic, Default Reasoning. Planning:
+			Blocks World, STRIPS, Constraint Satisfaction, Basics of
+			Probabilistic Planning. Advanced Topics: Introduction to
+			topics like Computer Vision, Expert Systems, Natural
+			Language Processing, Big data, Neuro Computing, Robotics,
+			Web Search.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS311m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS311 Computer Architecture Laboratory</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>0-0-3-3</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		The lab will closely follow the theory course. The idea is to have the students develop a software model of a simple processor, capturing both functionality and timing aspects. They will implement modules as the concepts are taught in class.
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: NILL</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS314m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS314 Operating Systems Laboratory</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>0-0-3-3</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Autumn</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Laboratory Assignments related to the topics covered in the
+			theory course: Process Management, Memory
+			Management, Storage Management, Protection and
+			Security, Virtual Machines, Distributed Systems
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: CS301</h2>
+    </div>
+  </div>
+</div>
+
+<div id="CS304m" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>CS304 Operating Systems</h2>
+    </div>
+    <div class="modal-body">
+      <table>
+      	<col width="30%">
+      <tr>
+      	<td>Credits</td>
+      	<td>3-0-0-6</td>
+      </tr>
+      <tr>
+      	<td>Type of Course</td>
+      	<td>Core Course</td>
+      </tr>
+      <tr>
+      	<td>Semester in which normally to be offered</td>
+      	<td>Spring</td>
+      </tr>
+      <tr>
+      	<td>Full or Half Course</td>
+      	<td>Full</td>
+      </tr>
+      <tr>
+      	<td>Course Content</td>
+      	<td>
+      		Process Management, Memory Management, Storage
+			Management, Protection and Security, Virtual Machines,
+			Distributed Systems
+		</td>
+      </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <h2>Prerequisites: CS301</h2>
+    </div>
+  </div>
+</div>
+
+</svg>
+<script type="text/javascript">
+var mcs102 = document.getElementById('CS102m');
+var bcs102 = document.getElementById("CS102");
+var tbcs102 = document.getElementById("TCS102");
+var scs102 = document.getElementsByClassName("close")[0];
+bcs102.onclick = function() {
+    mcs102.style.display = "block";
+}
+tbcs102.onclick = function() {
+    mcs102.style.display = "block";
+}
+scs102.onclick = function() {
+    mcs102.style.display = "none";
+}
+var mma301 = document.getElementById('MA301m');
+var bma301 = document.getElementById("MA301");
+var tbma301 = document.getElementById("TMA301");
+var sma301 = document.getElementsByClassName("close")[1];
+bma301.onclick = function() {
+    mma301.style.display = "block";
+}
+tbma301.onclick = function() {
+    mma301.style.display = "block";
+}
+sma301.onclick = function() {
+    mma301.style.display = "none";
+}
+
+var mcs213 = document.getElementById('CS213m');
+var bcs213 = document.getElementById("CS213");
+var tbcs213 = document.getElementById("TCS213");
+var scs213 = document.getElementsByClassName("close")[2];
+bcs213.onclick = function() {
+    mcs213.style.display = "block";
+}
+tbcs213.onclick = function() {
+    mcs213.style.display = "block";
+}
+scs213.onclick = function() {
+    mcs213.style.display = "none";
+}
+
+var mcs204 = document.getElementById('CS204m');
+var bcs204 = document.getElementById("CS204");
+var tbcs204 = document.getElementById("TCS204");
+var scs204 = document.getElementsByClassName("close")[3];
+bcs204.onclick = function() {
+    mcs204.style.display = "block";
+}
+tbcs204.onclick = function() {
+    mcs204.style.display = "block";
+}
+scs204.onclick = function() {
+    mcs204.style.display = "none";
+}
+
+var mcs201 = document.getElementById('CS201m');
+var bcs201 = document.getElementById("CS201");
+var tbcs201 = document.getElementById("TCS201");
+var scs201 = document.getElementsByClassName("close")[4];
+bcs201.onclick = function() {
+    mcs201.style.display = "block";
+}
+tbcs201.onclick = function() {
+    mcs201.style.display = "block";
+}
+scs201.onclick = function() {
+    mcs201.style.display = "none";
+}
+
+var mcs206 = document.getElementById('CS206m');
+var bcs206 = document.getElementById("CS206");
+var tbcs206 = document.getElementById("TCS206");
+var scs206 = document.getElementsByClassName("close")[5];
+bcs206.onclick = function() {
+    mcs206.style.display = "block";
+}
+tbcs206.onclick = function() {
+    mcs206.style.display = "block";
+}
+scs206.onclick = function() {
+    mcs206.style.display = "none";
+}
+
+var mcs203 = document.getElementById('CS203m');
+var bcs203 = document.getElementById("CS203");
+var tbcs203 = document.getElementById("TCS203");
+var scs203 = document.getElementsByClassName("close")[6];
+bcs203.onclick = function() {
+    mcs203.style.display = "block";
+}
+tbcs203.onclick = function() {
+    mcs203.style.display = "block";
+}
+scs203.onclick = function() {
+    mcs203.style.display = "none";
+}
+
+var mcs202 = document.getElementById('CS202m');
+var bcs202 = document.getElementById("CS202");
+var tbcs202 = document.getElementById("TCS202");
+var scs202 = document.getElementsByClassName("close")[7];
+bcs202.onclick = function() {
+    mcs202.style.display = "block";
+}
+tbcs202.onclick = function() {
+    mcs202.style.display = "block";
+}
+scs202.onclick = function() {
+    mcs202.style.display = "none";
+}
+
+var mcs212 = document.getElementById('CS212m');
+var bcs212 = document.getElementById("CS212");
+var tbcs212 = document.getElementById("TCS212");
+var scs212 = document.getElementsByClassName("close")[8];
+bcs212.onclick = function() {
+    mcs212.style.display = "block";
+}
+tbcs212.onclick = function() {
+    mcs212.style.display = "block";
+}
+scs212.onclick = function() {
+    mcs212.style.display = "none";
+}
+
+var mcs306 = document.getElementById('CS306m');
+var bcs306 = document.getElementById("CS306");
+var tbcs306 = document.getElementById("TCS306");
+var scs306 = document.getElementsByClassName("close")[9];
+bcs306.onclick = function() {
+    mcs306.style.display = "block";
+}
+tbcs306.onclick = function() {
+    mcs306.style.display = "block";
+}
+scs306.onclick = function() {
+    mcs306.style.display = "none";
+}
+
+var mcs303 = document.getElementById('CS303m');
+var bcs303 = document.getElementById("CS303");
+var tbcs303 = document.getElementById("TCS303");
+var scs303 = document.getElementsByClassName("close")[10];
+bcs303.onclick = function() {
+    mcs303.style.display = "block";
+}
+tbcs303.onclick = function() {
+    mcs303.style.display = "block";
+}
+scs303.onclick = function() {
+    mcs303.style.display = "none";
+}
+
+var mcs211 = document.getElementById('CS211m');
+var bcs211 = document.getElementById("CS211");
+var tbcs211 = document.getElementById("TCS211");
+var scs211 = document.getElementsByClassName("close")[11];
+bcs211.onclick = function() {
+    mcs211.style.display = "block";
+}
+tbcs211.onclick = function() {
+    mcs211.style.display = "block";
+}
+scs211.onclick = function() {
+    mcs211.style.display = "none";
+}
+
+var mcs301 = document.getElementById('CS301m');
+var bcs301 = document.getElementById("CS301");
+var tbcs301 = document.getElementById("TCS301");
+var scs301 = document.getElementsByClassName("close")[12];
+bcs301.onclick = function() {
+    mcs301.style.display = "block";
+}
+tbcs301.onclick = function() {
+    mcs301.style.display = "block";
+}
+scs301.onclick = function() {
+    mcs301.style.display = "none";
+}
+
+var mcs313 = document.getElementById('CS313m');
+var bcs313 = document.getElementById("CS313");
+var tbcs313 = document.getElementById("TCS313");
+var scs313 = document.getElementsByClassName("close")[13];
+bcs313.onclick = function() {
+    mcs313.style.display = "block";
+}
+tbcs313.onclick = function() {
+    mcs313.style.display = "block";
+}
+scs313.onclick = function() {
+    mcs313.style.display = "none";
+}
+
+var mcs302 = document.getElementById('CS302m');
+var bcs302 = document.getElementById("CS302");
+var tbcs302 = document.getElementById("TCS302");
+var scs302 = document.getElementsByClassName("close")[14];
+bcs302.onclick = function() {
+    mcs302.style.display = "block";
+}
+tbcs302.onclick = function() {
+    mcs302.style.display = "block";
+}
+scs302.onclick = function() {
+    mcs302.style.display = "none";
+}
+
+var mcs311 = document.getElementById('CS311m');
+var bcs311 = document.getElementById("CS311");
+var tbcs311 = document.getElementById("TCS311");
+var scs311 = document.getElementsByClassName("close")[15];
+bcs311.onclick = function() {
+    mcs311.style.display = "block";
+}
+tbcs311.onclick = function() {
+    mcs311.style.display = "block";
+}
+scs311.onclick = function() {
+    mcs311.style.display = "none";
+}
+
+var mcs314 = document.getElementById('CS314m');
+var bcs314 = document.getElementById("CS314");
+var tbcs314 = document.getElementById("TCS314");
+var scs314 = document.getElementsByClassName("close")[16];
+bcs314.onclick = function() {
+    mcs314.style.display = "block";
+}
+tbcs314.onclick = function() {
+    mcs314.style.display = "block";
+}
+scs314.onclick = function() {
+    mcs314.style.display = "none";
+}
+
+var mcs304 = document.getElementById('CS304m');
+var bcs304 = document.getElementById("CS304");
+var tbcs304 = document.getElementById("TCS304");
+var scs304 = document.getElementsByClassName("close")[17];
+bcs304.onclick = function() {
+    mcs304.style.display = "block";
+}
+tbcs304.onclick = function() {
+    mcs304.style.display = "block";
+}
+scs304.onclick = function() {
+    mcs304.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == mcs102) {
+        mcs102.style.display = "none";
+    }
+    if (event.target == mma301) {
+        mma301.style.display = "none";
+    }
+    if (event.target == mcs213) {
+        mcs213.style.display = "none";
+    }
+    if (event.target == mcs204) {
+        mcs204.style.display = "none";
+    }
+    if (event.target == mcs201) {
+        mcs201.style.display = "none";
+    }
+    if (event.target == mcs206) {
+        mcs206.style.display = "none";
+    }
+    if (event.target == mcs203) {
+        mcs203.style.display = "none";
+    }
+    if (event.target == mcs202) {
+        mcs202.style.display = "none";
+    }
+    if (event.target == mcs212) {
+        mcs212.style.display = "none";
+    }
+    if (event.target == mcs306) {
+        mcs306.style.display = "none";
+    }
+    if (event.target == mcs303) {
+        mcs303.style.display = "none";
+    }
+    if (event.target == mcs211) {
+        mcs211.style.display = "none";
+    }
+    if (event.target == mcs301) {
+        mcs301.style.display = "none";
+    }
+    if (event.target == mcs313) {
+        mcs313.style.display = "none";
+    }
+    if (event.target == mcs302) {
+        mcs302.style.display = "none";
+    }
+    if (event.target == mcs311) {
+        mcs311.style.display = "none";
+    }
+    if (event.target == mcs314) {
+        mcs314.style.display = "none";
+    }
+    if (event.target == mcs304) {
+        mcs304.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+SSL Project 2018: Course Database and Spines.
+
+Objective: To build a responive graph of courses offered in IIT Dharwad, which gives information about the prerequisites for all courses.
+
+Approach:
+	We first divided the courses categorically and built a graph using SVG(Scalable Vector Graphics). The nodes of the graph were labelled as the Course Code. A directed line showed the relation between those courses. For example, if a person wants to take a course D in IIT Dharwad, and to learn D he must first learn C, for C he must first learn B and to learn B, he must first take course A, then on hovering over the node labelled course D, the nodes would D->C->B->A would light up, thus displaying the prerequisites. If A is a prerequisite for B, then on hovering on node B, A and B would light up, with node A pointing to node B.
+
+
+	We used JavaScript to show the connections between nodes and also for highlighting.
+
+	In SVG, every node and the text object written on it can be assigned an ID. We built all the nodes. 
+
+
+	<circle onmouseover="joinnodes('ME111')" onmouseleave="removenodes('ME111')" id="ME111" cx="100" cy="100" r="50" stroke="black" fill="#110062" stroke-width="0"    />
+    <text id="TME111" onmouseover="tjoinnodes('TME111')" onmouseleave="tremovenodes('TME111')" x="100" y="100" alignment-baseline="middle" text-anchor="middle" font-family="Constantia" font-size="25" fill="white"  >me111</text>
+
+
+
+    In SVG, we can draw a directed line from a co-ordinate(x1,y1) to (x2,y2). Using the data we had and the nodes we had constructed, we knew the nodes which had to be connected. Every line was also assigned an id as shown:
+
+
+
+    <line id="ME205toME111" stroke-width="0" style="stroke:black" x2="200" x1="100" y2="250" y1="100" class="arrow"/>
+
+    
+
+    The id "ME205toME111" means that line will exist between the nodes ME205 and ME111.
+
+    
+
+    We used adjacency list of a graph to set up the connections. The following code shows how.
+
+    var cs206 = []
+	cs206.push("CS206")
+	cs206.push("CS201")
+	cs206.push("CS102")
+	cs206.push("CS203")
+	cs206.push("CS211")
+	mainlist.push(cs206)
+
+	Eg: For making the adjacency list for CS206,we made an array variable cs206, in which we kept pushing its prerequisites. Then we pushed this entire list into a mainlist. This was done for all nodes.
+
+
+	
+
+	The function joinnodes(give), which makes lines appear and nodes highlight is as follows:
+
+    	function joinnodes(give)
+		{
+			document.getElementById(give).setAttribute("fill","#00BCFF")
+			document.getElementById(give).setAttribute("r","55")
+			var index = 0
+			for(var i=0;i<mainlist.length;i++)
+			{
+				var temp = mainlist[i];
+				if(temp[0] == give)
+				{
+					index = i;
+					break;
+				}
+			}
+			var cars = mainlist[index];
+			for(var a=1;a<cars.length;a++)
+			{
+				var lineid = cars[0] + "to" + cars[a];
+				document.getElementById(lineid).setAttribute("stroke-width","2")
+				document.getElementById(cars[a]).setAttribute("fill","#00BCFF")
+				document.getElementById(cars[a]).setAttribute("r","55")
+				joinnodes(cars[a]);
+			}
+		}
+
+
+		While defining an SVG node(circle), we call this function through onmouseover(id) function.
+
+		Suppose a person hovers over CS206. The joinnodes function will be triggered. As mentioned above, mainlist contains all the adjacency lists, in each of which the first element is that particular node which the user is hovering over. Looping through all the lists, the function will determine the list which has its first element as CS206. This list is stored in a variable cars. 
+
+		Now, the function loops through the elements in the list cars. Again as mentioned above, we have declared id's for all the nodes. Using setAttribute(), we can alter the attribute 'fill' (which gives the node it's color) and change the color of every node whose id is in the adjacency list. This will result in the lightening up of the prerequisites of the node. This is recursive.
+
+		How to make the connections, though? For CS206, we defined the following lines:
+
+		<line id="CS206toCS201" stroke-width="0" style="stroke:red;" x2="300" y2="250" x1="100" y1="250" class="arrow" />
+		<line id="CS206toCS211" stroke-width="0" style="stroke:red;" x2="300" y2="250" x1="600" y1="400" class="arrow" />
+		<line id="CS206toCS203" stroke-width="0" style="stroke:red;" x2="300" y2="250" x1="700" y1="250" class="arrow" />
+		<line id="CS206toCS102" stroke-width="0" style="stroke:red;" x2="300" y2="250" x1="250" y1="100" class="arrow" />
+
+		The above function is looping through the adjacency list of CS206. While doing this, the lineid stored the value cars[0] + "to" + cars[a] which will be equal to CS206toCS201, CS206toCS211, CS206toCS203 then CS206toCS203. This lineid is same as the id of the lines we defined in SVG. Using this, we can change the attributes of the lines, too. In this case, the lines are always present. Just their thickness is 0. So, when the joinnodes function is triggered, we changed the stroke-width to "2".
+
+		This is how the connections are shown and the nodes are highlighted.
+
+
+
+		But these changes will be permanent. We need to revert back to the original state as soon as the mouse leaves the node. To do this, we used onmouseleave(id) attribute, which will trigger the function removenodes(id), which is as follows:
+
+			function removenodes(give)
+			{	
+			document.getElementById(give).setAttribute("fill","#53002B")
+		  	document.getElementById(give).setAttribute("r","50");
+			var index = 0
+			for(var i=0;i<mainlist.length;i++)
+			{
+				var temp = mainlist[i];
+				if(temp[0] == give)
+				{
+					index = i;
+					break;
+				}
+			}
+			var cars = mainlist[index];
+			for(var a=1;a<cars.length;a++)
+			{
+				var lineid = cars[0] + "to" + cars[a];
+				document.getElementById(lineid).setAttribute("stroke-width","0")
+				document.getElementById(cars[a]).setAttribute("fill","#53002B")
+		    document.getElementById(give).setAttribute("r","50");
+				removenodes(cars[a]);
+			}
+		}
+
+		This function has the exact same working as the joinnodes() function. This just reverts the attributes to their original state.
+
+
+
+Front-End Development:
+	For front-end, we used CSS and Bootstrap for theming. Beside the graph, we needed to dispense some information about the courses. For this, we created modalboxes which contain useful information about the course. Modal box for a course appears when that particular course is clicked.
+
+
+Code Organisation:
+	There are 6 main files: 
+		home.html -- Home Page
+		realcse.html -- CSE 
+		realee.html -- EE
+		realmec.html -- ME
+		othercourses.html -- For Other Courses
+		electives.html -- For Electives
+
+	Other files:
+		menustyles.css -- Styling for the Branch menu.
+		logo_white.png -- IIT Dharwad Logo. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
